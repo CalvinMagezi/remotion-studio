@@ -1,0 +1,101 @@
+{
+  "id": "ai-quarterly-review",
+  "title": "Q4 2025 Quarterly Review",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 450,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    { "id": "background", "label": "Background Layer", "zIndex": 0 },
+    { "id": "content", "label": "Content", "zIndex": 1 },
+    { "id": "data", "label": "Data Visuals", "zIndex": 2 },
+    { "id": "ui", "label": "UI Overlays", "zIndex": 3 }
+  ],
+  "clips": [
+    {
+      "id": "intro-title",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Q4 2025",
+        "subtitle": "Quarterly Business Review",
+        "alignment": "center",
+        "fontSize": 100,
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "revenue-counter",
+      "component": "StatCounter",
+      "trackId": "data",
+      "from": 100,
+      "durationInFrames": 100,
+      "props": {
+        "value": 4200000,
+        "label": "Total Revenue",
+        "prefix": "$",
+        "fontSize": 110,
+        "decimals": 0,
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 40 }
+      }
+    },
+    {
+      "id": "bar-chart-1",
+      "component": "BarChart",
+      "trackId": "data",
+      "from": 210,
+      "durationInFrames": 120,
+      "props": {
+        "title": "Revenue by Region",
+        "data": [
+          { "label": "APAC", "value": 1400000 },
+          { "label": "EMEA", "value": 980000 },
+          { "label": "AMER", "value": 1820000 }
+        ],
+        "showValues": true,
+        "motion": { "type": "spring", "direction": "in", "durationInFrames": 35 }
+      }
+    },
+    {
+      "id": "progress-ring-1",
+      "component": "ProgressRing",
+      "trackId": "data",
+      "from": 340,
+      "durationInFrames": 110,
+      "props": {
+        "percentage": 87,
+        "label": "Target Achieved",
+        "size": 280,
+        "strokeWidth": 20,
+        "motion": { "type": "spring", "direction": "in", "durationInFrames": 50 }
+      }
+    },
+    {
+      "id": "lower-third-1",
+      "component": "LowerThird",
+      "trackId": "ui",
+      "from": 15,
+      "durationInFrames": 70,
+      "props": {
+        "name": "Sarah Chen",
+        "title": "Chief Revenue Officer",
+        "position": "bottom-left",
+        "motion": { "type": "spring", "direction": "left", "durationInFrames": 18 }
+      }
+    },
+    {
+      "id": "fade-out",
+      "component": "FadeTransition",
+      "trackId": "background",
+      "from": 430,
+      "durationInFrames": 20,
+      "props": {
+        "color": "#0f172a",
+        "durationInFrames": 20
+      }
+    }
+  ]
+}

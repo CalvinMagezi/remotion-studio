@@ -1,0 +1,264 @@
+{
+  "id": "nextjs-app-router-reel",
+  "title": "Next.js 14 App Router Fundamentals — Micro-Course Reel",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1350,
+  "backgroundColor": "#0a0a0f",
+  "tracks": [
+    { "id": "background", "label": "Background", "zIndex": 0, "hidden": false },
+    { "id": "content",    "label": "Main Content","zIndex": 1, "hidden": false },
+    { "id": "data",       "label": "Data Visuals","zIndex": 2, "hidden": false },
+    { "id": "overlay",    "label": "UI Overlays", "zIndex": 3, "hidden": false }
+  ],
+  "clips": [
+
+    { "id": "fade-in", "component": "FadeTransition", "trackId": "background", "from": 0, "durationInFrames": 20,
+      "props": { "color": "#0a0a0f", "durationInFrames": 20 }
+    },
+
+    { "id": "hook-title", "component": "TitleCard", "trackId": "content", "from": 0, "durationInFrames": 120,
+      "props": {
+        "title": "Next.js 14",
+        "subtitle": "App Router fundamentals in 45 seconds",
+        "alignment": "center",
+        "fontSize": 72,
+        "color": "#ffffff",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 22, "springProfile": "gentle" }
+      }
+    },
+
+    { "id": "hook-badge", "component": "LowerThird", "trackId": "overlay", "from": 18, "durationInFrames": 90,
+      "props": {
+        "name": "Micro-Course",
+        "title": "App Router · Next.js 14",
+        "accentColor": "#0ea5e9",
+        "position": "bottom-left",
+        "motion": { "type": "spring", "direction": "left", "durationInFrames": 16 }
+      }
+    },
+
+    { "id": "concept-1-bg", "component": "TitleCard", "trackId": "background", "from": 120, "durationInFrames": 180,
+      "props": {
+        "title": "",
+        "backgroundColor": "#0f172a",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    { "id": "concept-1-label", "component": "LowerThird", "trackId": "overlay", "from": 130, "durationInFrames": 155,
+      "props": {
+        "name": "Concept 1 of 4",
+        "title": "Server Components",
+        "accentColor": "#22d3ee",
+        "textColor": "#e2e8f0",
+        "position": "top-left",
+        "motion": { "type": "spring", "direction": "left", "durationInFrames": 14 }
+      }
+    },
+    { "id": "concept-1-title", "component": "TitleCard", "trackId": "content", "from": 120, "durationInFrames": 180,
+      "props": {
+        "title": "Server Components",
+        "subtitle": "Default in app/ — zero client JS sent to the browser. Fetch data directly inside your component.",
+        "alignment": "center",
+        "fontSize": 60,
+        "color": "#f0f9ff",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    { "id": "concept-1-stat", "component": "StatCounter", "trackId": "data", "from": 165, "durationInFrames": 120,
+      "props": {
+        "value": 0,
+        "label": "KB of client JS by default",
+        "suffix": "",
+        "color": "#22d3ee",
+        "fontSize": 96,
+        "decimals": 0,
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "bouncy" }
+      }
+    },
+
+    { "id": "slide-1-2", "component": "SlideTransition", "trackId": "background", "from": 295, "durationInFrames": 20,
+      "props": { "direction": "left", "durationInFrames": 20, "color": "#0a0a0f" }
+    },
+
+    { "id": "concept-2-label", "component": "LowerThird", "trackId": "overlay", "from": 315, "durationInFrames": 175,
+      "props": {
+        "name": "Concept 2 of 4",
+        "title": "Client Components",
+        "accentColor": "#a78bfa",
+        "textColor": "#e2e8f0",
+        "position": "top-left",
+        "motion": { "type": "spring", "direction": "left", "durationInFrames": 14 }
+      }
+    },
+    { "id": "concept-2-title", "component": "TitleCard", "trackId": "content", "from": 310, "durationInFrames": 180,
+      "props": {
+        "title": "'use client'",
+        "subtitle": "Add this directive at the top of any file that needs hooks, events, or browser APIs.",
+        "alignment": "center",
+        "fontSize": 64,
+        "color": "#fdf4ff",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    { "id": "concept-2-caption", "component": "Caption", "trackId": "overlay", "from": 350, "durationInFrames": 130,
+      "props": {
+        "text": "useState · useEffect · onClick · Browser APIs",
+        "position": "bottom",
+        "fontSize": 26,
+        "backgroundColor": "rgba(167,139,250,0.2)",
+        "textColor": "#e9d5ff",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 12 }
+      }
+    },
+
+    { "id": "slide-2-3", "component": "SlideTransition", "trackId": "background", "from": 485, "durationInFrames": 20,
+      "props": { "direction": "left", "durationInFrames": 20, "color": "#0a0a0f" }
+    },
+
+    { "id": "concept-3-label", "component": "LowerThird", "trackId": "overlay", "from": 505, "durationInFrames": 175,
+      "props": {
+        "name": "Concept 3 of 4",
+        "title": "Layouts",
+        "accentColor": "#34d399",
+        "textColor": "#e2e8f0",
+        "position": "top-left",
+        "motion": { "type": "spring", "direction": "left", "durationInFrames": 14 }
+      }
+    },
+    { "id": "concept-3-title", "component": "TitleCard", "trackId": "content", "from": 500, "durationInFrames": 180,
+      "props": {
+        "title": "Layouts",
+        "subtitle": "layout.tsx wraps children and persists across navigation — no re-render on route change.",
+        "alignment": "center",
+        "fontSize": 64,
+        "color": "#f0fdf4",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    { "id": "concept-3-ring", "component": "ProgressRing", "trackId": "data", "from": 545, "durationInFrames": 120,
+      "props": {
+        "percentage": 100,
+        "label": "Routes share the layout",
+        "size": 180,
+        "strokeWidth": 14,
+        "color": "#34d399",
+        "trackColor": "#1e293b",
+        "showPercentage": false,
+        "motion": { "type": "spring", "direction": "in", "durationInFrames": 50 }
+      }
+    },
+
+    { "id": "slide-3-4", "component": "SlideTransition", "trackId": "background", "from": 675, "durationInFrames": 20,
+      "props": { "direction": "left", "durationInFrames": 20, "color": "#0a0a0f" }
+    },
+
+    { "id": "concept-4-label", "component": "LowerThird", "trackId": "overlay", "from": 695, "durationInFrames": 175,
+      "props": {
+        "name": "Concept 4 of 4",
+        "title": "Special Files",
+        "accentColor": "#fb923c",
+        "textColor": "#e2e8f0",
+        "position": "top-left",
+        "motion": { "type": "spring", "direction": "left", "durationInFrames": 14 }
+      }
+    },
+    { "id": "concept-4-title", "component": "TitleCard", "trackId": "content", "from": 690, "durationInFrames": 180,
+      "props": {
+        "title": "Special Files",
+        "subtitle": "page.tsx  ·  layout.tsx  ·  loading.tsx  ·  error.tsx  ·  not-found.tsx",
+        "alignment": "center",
+        "fontSize": 58,
+        "color": "#fff7ed",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    { "id": "concept-4-caption", "component": "Caption", "trackId": "overlay", "from": 730, "durationInFrames": 130,
+      "props": {
+        "text": "Built-in states with zero configuration",
+        "position": "bottom",
+        "fontSize": 26,
+        "backgroundColor": "rgba(251,146,60,0.18)",
+        "textColor": "#fed7aa",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 12 }
+      }
+    },
+
+    { "id": "slide-4-stats", "component": "FadeTransition", "trackId": "background", "from": 865, "durationInFrames": 20,
+      "props": { "color": "#0a0a0f", "durationInFrames": 20 }
+    },
+
+    { "id": "stats-title", "component": "TitleCard", "trackId": "content", "from": 875, "durationInFrames": 130,
+      "props": {
+        "title": "Why App Router?",
+        "alignment": "center",
+        "fontSize": 56,
+        "color": "#f8fafc",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 18, "springProfile": "snappy" }
+      }
+    },
+    { "id": "perf-chart", "component": "BarChart", "trackId": "data", "from": 880, "durationInFrames": 200,
+      "props": {
+        "title": "Bundle Size Reduction",
+        "data": [
+          { "label": "Pages Router", "value": 100, "color": "#475569" },
+          { "label": "App Router", "value": 38, "color": "#0ea5e9" }
+        ],
+        "horizontal": true,
+        "showValues": true,
+        "barColor": "#0ea5e9",
+        "backgroundColor": "#0f172a",
+        "motion": { "type": "spring", "direction": "in", "durationInFrames": 35, "springProfile": "snappy" }
+      }
+    },
+
+    { "id": "adoption-ring", "component": "ProgressRing", "trackId": "data", "from": 1090, "durationInFrames": 180,
+      "props": {
+        "percentage": 87,
+        "label": "New Next.js projects using App Router",
+        "size": 240,
+        "strokeWidth": 18,
+        "color": "#0ea5e9",
+        "trackColor": "#1e293b",
+        "showPercentage": true,
+        "motion": { "type": "spring", "direction": "in", "durationInFrames": 55 }
+      }
+    },
+    { "id": "adoption-label", "component": "LowerThird", "trackId": "overlay", "from": 1100, "durationInFrames": 160,
+      "props": {
+        "name": "2024 State of Next.js",
+        "title": "App Router Adoption",
+        "accentColor": "#0ea5e9",
+        "position": "bottom-left",
+        "motion": { "type": "spring", "direction": "left", "durationInFrames": 16 }
+      }
+    },
+
+    { "id": "cta-title", "component": "TitleCard", "trackId": "content", "from": 1280, "durationInFrames": 55,
+      "props": {
+        "title": "Start building",
+        "subtitle": "npx create-next-app@latest",
+        "alignment": "center",
+        "fontSize": 58,
+        "color": "#ffffff",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 18, "springProfile": "bouncy" }
+      }
+    },
+    { "id": "cta-caption", "component": "Caption", "trackId": "overlay", "from": 1295, "durationInFrames": 40,
+      "props": {
+        "text": "Follow for more Next.js & web dev tips",
+        "position": "bottom",
+        "fontSize": 24,
+        "backgroundColor": "rgba(14,165,233,0.25)",
+        "textColor": "#e0f2fe",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 10 }
+      }
+    },
+
+    { "id": "fade-out", "component": "FadeTransition", "trackId": "background", "from": 1330, "durationInFrames": 20,
+      "props": { "color": "#0a0a0f", "durationInFrames": 20 }
+    }
+
+  ]
+}

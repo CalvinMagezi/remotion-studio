@@ -1,0 +1,39 @@
+{
+  "name": "remotion-studio",
+  "version": "0.1.0",
+  "description": "Local-first, extensible Remotion Studio for autonomous AI agents",
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "bun run build:remotion && bun run build:mcp && bun run build:agent",
+    "build:remotion": "remotion bundle",
+    "build:mcp": "bun build src/mcp/server.ts --outdir dist/mcp --target node",
+    "build:agent": "bun build src/agent/cli.ts --outdir dist/agent --target node",
+    "render": "remotion render",
+    "mcp": "bun run dist/mcp/server.js",
+    "typecheck": "tsc --noEmit",
+    "studio": "remotion studio"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/google-fonts": "^4.0.429",
+    "@remotion/player": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "@remotion/tailwind": "^4.0.0",
+    "ai": "^4.0.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "remotion": "^4.0.0",
+    "tailwindcss": "^3.4.0",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "typescript": "^5.3.0"
+  }
+}
