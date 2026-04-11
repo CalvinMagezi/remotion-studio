@@ -3,6 +3,7 @@ import { Composition } from "remotion";
 import { TimelineRenderer } from "./schema/renderer";
 import { TimelineSchema } from "./schema/timeline";
 import type { Timeline } from "./schema/timeline";
+import { COMPOSITIONS } from "./compositions";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -1253,5 +1254,19 @@ export const RemotionRoot: React.FC = () => (
         }
       }}
     />
+
+    {/* Auto-registered compositions from the registry */}
+    {COMPOSITIONS.map((c) => (
+      <Composition
+        key={c.id}
+        id={c.id}
+        component={TimelineComposition}
+        durationInFrames={c.timeline.durationInFrames}
+        fps={c.timeline.fps}
+        width={c.timeline.width}
+        height={c.timeline.height}
+        defaultProps={{ timeline: c.timeline as unknown as Timeline }}
+      />
+    ))}
   </>
 );
