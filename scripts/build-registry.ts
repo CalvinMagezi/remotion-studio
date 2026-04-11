@@ -124,8 +124,8 @@ for (let i = 0; i < entries.length; i++) {
     path.relative(GENERATED_BASE, path.join(REPO_ROOT, relPath));
   // Normalise to forward slashes (Windows safety)
   const importPathNorm = importPath.split(path.sep).join("/");
-  // Strip the .json extension — TS resolveJsonModule handles it either way,
-  // but keeping it is more explicit and matches the task spec
+  // Keep the .json extension — resolveJsonModule handles it and the explicit
+  // extension is clearer for readers and bundler resolution.
   lines.push(`import tl_${i} from "${importPathNorm}";`);
 }
 
@@ -137,6 +137,10 @@ lines.push(
 for (let i = 0; i < entries.length; i++) {
   const { id } = entries[i];
   const comma = i < entries.length - 1 ? "," : "";
+  // `as unknown as Timeline` is required because resolveJsonModule infers a
+  // narrow literal type for the JSON, not the Zod-inferred Timeline type.
+  // Runtime correctness is guaranteed by the safeParse validation above —
+  // the TypeScript cast is a formality, not the actual safety check.
   lines.push(`  { id: "${id}", timeline: tl_${i} as unknown as Timeline }${comma}`);
 }
 
