@@ -1,7 +1,25 @@
 /**
- * academy-factory.ts
+ * academy-factory.ts  (DEV TOOL — not a runtime dependency)
+ *
  * Compact factory: pass a VideoSpec → get a full 28-clip, 900-frame Timeline back.
  * This keeps the spec files small and avoids repeating 28 clip definitions 100×.
+ *
+ * ## Regenerating examples/academy/
+ *
+ * If you change the template below, regenerate the 100 JSON files with:
+ *
+ *   bun -e "
+ *     import { academySpecs } from './academy-factory';
+ *     import { writeFileSync, mkdirSync } from 'node:fs';
+ *     mkdirSync('examples/academy', { recursive: true });
+ *     for (const t of academySpecs) {
+ *       writeFileSync('examples/academy/' + t.id + '.json', JSON.stringify(t, null, 2) + '\n');
+ *     }
+ *   "
+ *   bun run registry   # must pass schema validation before committing
+ *
+ * Note: `title: " "` (single space) is intentional on background TitleCard clips —
+ * the schema enforces `z.string().min(1)`, so empty strings would fail validation.
  */
 
 // ─── Constants ────────────────────────────────────────────────────────────────
