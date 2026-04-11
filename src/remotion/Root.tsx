@@ -1265,7 +1265,7 @@ export const RemotionRoot: React.FC = () => (
         fps={c.timeline.fps}
         width={c.timeline.width}
         height={c.timeline.height}
-        defaultProps={{ timeline: c.timeline as unknown as Timeline }}
+        defaultProps={{ timeline: c.timeline }}
       />
     ))}
   </>
