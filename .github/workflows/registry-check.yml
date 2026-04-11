@@ -1,0 +1,32 @@
+name: Registry integrity check
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  registry-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Regenerate registry
+        run: bun run registry
+
+      - name: Check for registry drift
+        run: |
+          if ! git diff --exit-code src/remotion/compositions/registry.generated.ts; then
+            echo ""
+            echo "ERROR: registry.generated.ts is out of date."
+            echo "Run 'bun run registry' locally and commit the result."
+            exit 1
+          fi

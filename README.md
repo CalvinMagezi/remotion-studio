@@ -326,6 +326,22 @@ The JSON timeline schema adds another safety layer:
 - All props are Zod-validated before rendering
 - Invalid timelines are rejected before reaching the renderer
 
+## Working with Claude Code
+
+This repo is optimized for autonomous AI video generation via Claude Code.
+
+**Quick start:**
+1. Open the repo in a terminal with Claude Code: `claude`
+2. The MCP server auto-connects (see `.mcp.json`) — use `/mcp` to verify tools
+3. Load the `generating-timelines` skill and follow the 6-step workflow
+
+**The agent workflow:**
+- Agents write validated `Timeline` JSON to `examples/`
+- `bun run registry` auto-registers them as Remotion compositions
+- `npx remotion render` or `render_build_command` MCP tool handles rendering
+
+See `CLAUDE.md` for the full guide, available skills, and all MCP tools.
+
 ## License
 
 MIT
