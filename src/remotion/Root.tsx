@@ -13,7 +13,9 @@ const TimelineComposition = TimelineRenderer as React.ComponentType<any>;
 
 export const RemotionRoot: React.FC = () => (
   <>
-    {/* Dynamic agent composition — pass ?timeline=<json> via --props */}
+    {/* Dynamic agent composition — always invoked with --props=<json>.
+        The defaultProps below are a Studio preview placeholder only;
+        calculateMetadata overrides all dimensions at actual render time. */}
     <Composition
       id="AgentComposition"
       component={TimelineComposition}
