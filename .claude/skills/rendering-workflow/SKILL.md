@@ -6,6 +6,9 @@ manual: false
 
 # Rendering Workflow
 
+## Step 0 — Confirm the composition is registered
+Call `render_list_compositions` and verify your target ID appears. If it doesn't, run `bun run registry` first — the composition won't render if the registry hasn't been regenerated since the JSON was saved.
+
 ## Step 1 — Identify the composition ID
 If the timeline lives at `examples/**/<slug>.json`, its Remotion composition ID is `timeline.id` (auto-registered).
 For a one-off timeline not yet saved, use `AgentComposition` + `--props`.

@@ -11,7 +11,10 @@ Use this skills whenever you are dealing with Remotion code to obtain the domain
 
 ## Captions
 
-When dealing with captions or subtitles, load the [./rules/subtitles.md](./rules/subtitles.md) file for more information.
+When dealing with captions or subtitles, load the [./rules/subtitles.md](./rules/subtitles.md) file for general subtitle rendering. For the full captions pipeline, also load:
+- [./rules/display-captions.md](./rules/display-captions.md) — TikTok-style pages and word highlighting
+- [./rules/import-srt-captions.md](./rules/import-srt-captions.md) — parsing .srt files via `@remotion/captions`
+- [./rules/transcribe-captions.md](./rules/transcribe-captions.md) — Whisper-based audio-to-captions
 
 ## Using FFmpeg
 
