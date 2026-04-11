@@ -6,7 +6,7 @@ import tl_0 from "../../../examples/demo-timeline.json";
 import tl_1 from "../../../examples/nextjs-app-router-reel.json";
 import tl_2 from "../../../examples/syntra/week-01-mar-09-three-failures-of-enterprise-ai---youtube-shorts.json";
 import tl_3 from "../../../examples/syntra/week-01-mar-09-what-is-an-intelligence-layer---youtube-shorts.json";
-import tl_4 from "../../../examples/syntra/week-01-mar-09-why-ai-tools-don't-talk---youtube-shorts.json";
+import tl_4 from "../../../examples/syntra/week-01-mar-09-why-ai-tools-dont-talk---youtube-shorts.json";
 import tl_5 from "../../../examples/syntra/week-02-mar-16-agent-hq-launch---youtube-shorts.json";
 import tl_6 from "../../../examples/syntra/week-02-mar-16-introducing-syntra---full-company-video.json";
 import tl_7 from "../../../examples/syntra/week-02-mar-16-introducing-syntra---youtube-shorts.json";
@@ -18,13 +18,13 @@ import tl_12 from "../../../examples/syntra/week-04-mar-30-5-layer-intelligence-
 import tl_13 from "../../../examples/syntra/week-04-mar-30-data-sovereignty-for-africa---youtube-shorts.json";
 import tl_14 from "../../../examples/syntra/week-04-mar-30-persistent-memory---youtube-shorts.json";
 import tl_15 from "../../../examples/syntra/week-05-apr-06-building-ai-that-compounds-intelligence-over-time.json";
-import tl_16 from "../../../examples/syntra/week-05-apr-06-compounding-intelligence:-ai-systems-that-learn.json";
-import tl_17 from "../../../examples/syntra/week-05-apr-06-compounding-intelligence:-ai-that-learns.json";
-import tl_18 from "../../../examples/syntra/week-05-apr-06-context-engineering:-same-model,-different-results.json";
-import tl_19 from "../../../examples/syntra/week-05-apr-06-context-engineering:-the-new-frontier-of-ai.json";
-import tl_20 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration-problems-&-fixes.json";
-import tl_21 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration:-4-problems-&-solutions.json";
-import tl_22 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration:-a-practical-guide.json";
+import tl_16 from "../../../examples/syntra/week-05-apr-06-compounding-intelligence--ai-systems-that-learn.json";
+import tl_17 from "../../../examples/syntra/week-05-apr-06-compounding-intelligence--ai-that-learns.json";
+import tl_18 from "../../../examples/syntra/week-05-apr-06-context-engineering--same-model-different-results.json";
+import tl_19 from "../../../examples/syntra/week-05-apr-06-context-engineering--the-new-frontier-of-ai.json";
+import tl_20 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration--4-problems-and-solutions.json";
+import tl_21 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration--a-practical-guide.json";
+import tl_22 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration-problems-and-fixes.json";
 import tl_23 from "../../../examples/syntra/week-06-apr-13-intelligent-forgetting-in-ai-memory-systems.json";
 import tl_24 from "../../../examples/syntra/week-06-apr-13-the-role-of-forgetting-in-ai-memory-systems.json";
 import tl_25 from "../../../examples/syntra/week-07-apr-20-ai-strategy-east-africa---full-video.json";
@@ -103,9 +103,9 @@ export const COMPOSITIONS: readonly { id: string; timeline: Timeline }[] = [
   { id: "week-05-apr-06-compounding-intelligence--ai-that-learns", timeline: tl_17 as unknown as Timeline },
   { id: "week-05-apr-06-context-engineering--same-model--different-results", timeline: tl_18 as unknown as Timeline },
   { id: "week-05-apr-06-context-engineering--the-new-frontier-of-ai", timeline: tl_19 as unknown as Timeline },
-  { id: "week-05-apr-06-multi-agent-orchestration-problems---fixes", timeline: tl_20 as unknown as Timeline },
-  { id: "week-05-apr-06-multi-agent-orchestration--4-problems---solutions", timeline: tl_21 as unknown as Timeline },
-  { id: "week-05-apr-06-multi-agent-orchestration--a-practical-guide", timeline: tl_22 as unknown as Timeline },
+  { id: "week-05-apr-06-multi-agent-orchestration--4-problems---solutions", timeline: tl_20 as unknown as Timeline },
+  { id: "week-05-apr-06-multi-agent-orchestration--a-practical-guide", timeline: tl_21 as unknown as Timeline },
+  { id: "week-05-apr-06-multi-agent-orchestration-problems---fixes", timeline: tl_22 as unknown as Timeline },
   { id: "week-06-apr-13-intelligent-forgetting-in-ai-memory-systems", timeline: tl_23 as unknown as Timeline },
   { id: "week-06-apr-13-the-role-of-forgetting-in-ai-memory-systems", timeline: tl_24 as unknown as Timeline },
   { id: "week-07-apr-20-ai-strategy-east-africa---full-video", timeline: tl_25 as unknown as Timeline },
