@@ -1,0 +1,231 @@
+{
+  "id": "week-09-may-04-ai-competitive-moat---full-video",
+  "title": "AI Competitive Moat - Full Video",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 7650,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 75,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "in",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "SplitScreen",
+      "trackId": "content",
+      "from": 90,
+      "durationInFrames": 1710,
+      "props": {
+        "leftContent": {
+          "type": "text",
+          "value": "talking-head"
+        },
+        "rightContent": {
+          "type": "text",
+          "value": "strategic-visualization"
+        },
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Dimension 1: Domain-Specific Intelligence\nProprietary > Generic",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 120,
+      "durationInFrames": 270,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 360,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "right",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 390,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Dimension 2: Integrated Workflows\n90 Days to Replicate = Commodity\nYears to Replicate = Moat",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 420,
+      "durationInFrames": 270,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 660,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "right",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 690,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Dimensions 3-5: Data \u2022 Capability \u2022 Customer Value\nStructural Advantages That Compound Over Time",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 720,
+      "durationInFrames": 540,
+      "props": {
+        "title": "Competitive Advantage Timeline",
+        "data": [
+          {
+            "label": "Year 1",
+            "value": 20,
+            "color": "#F59E0B"
+          },
+          {
+            "label": "Year 2",
+            "value": 55,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Year 3+",
+            "value": 92,
+            "color": "#0D9488"
+          }
+        ],
+        "backgroundColor": "transparent"
+      }
+    },
+    {
+      "id": "clip-11",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1320,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "up",
+        "backgroundColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1350,
+      "durationInFrames": 180,
+      "props": {
+        "text": "The companies that win the next 5-10 years make strategic decisions about moat-building RIGHT NOW.\n\nsyntra-ai.vercel.app",
+        "backgroundColor": "#0D9488",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1530,
+      "durationInFrames": 90,
+      "props": {
+        "title": "syntra-ai.vercel.app",
+        "subtitle": "Intelligence Layer Architects",
+        "backgroundColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-deep-ambient.mp3",
+    "volume": 0.1,
+    "startFrom": 0,
+    "attribution": "Syntra deep ambient \u2014 generated, royalty-free"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "id": "week-05-apr-06-multi-agent-orchestration--a-practical-guide",
+  "title": "Multi-Agent Orchestration: A Practical Guide",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 5400,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 5400,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Multi-Agent Orchestration",
+        "subtitle": "A Practical Guide to Building Reliable Systems",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "accentColor": "#0D9488",
+        "fontSize": 72,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 80,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 100,
+      "durationInFrames": 120,
+      "props": {
+        "text": "By Calvin Magezi, Syntra Technologies Limited",
+        "fontSize": 32,
+        "color": "#F59E0B",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 210,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 230,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Problem #1: Over-Decomposition\n\nToo many agents = 50 state machines to debug\n\n3X FASTER with well-scoped agents",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 350,
+      "durationInFrames": 180,
+      "props": {
+        "data": [
+          {
+            "label": "Over-Decomposed (30 agents)",
+            "value": 45,
+            "color": "#EF4444"
+          },
+          {
+            "label": "Well-Scoped (5 agents)",
+            "value": 15,
+            "color": "#10B981"
+          }
+        ],
+        "title": "Convergence Time (seconds)",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "barColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 520,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-8",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 540,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Problem #2: Silent State Divergence\n\nAgent A commits \u2192 Agent B never sees it\n\nFix: Three-phase commits + versioning",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "SplitScreen",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 180,
+      "props": {
+        "leftContent": {
+          "type": "text",
+          "value": "Without Commits\nAgent A: COMMIT\nAgent B: \u274c Never sees it\nResult: Data corruption"
+        },
+        "rightContent": {
+          "type": "text",
+          "value": "With 3-Phase Commits\nPhase 1: PREPARE\nPhase 2: COMMIT\nPhase 3: ACK\nResult: Consistent state"
+        }
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 880,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-11",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 900,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Problem #3: Failure Cascades\n\nOne timeout \u2192 all downstream agents fail\n\nFix: Circuit breakers + exponential backoff",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "LineChart",
+      "trackId": "content",
+      "from": 1070,
+      "durationInFrames": 180,
+      "props": {
+        "data": [
+          {
+            "label": "Without backoff",
+            "value": 100.0,
+            "color": "#EF4444"
+          },
+          {
+            "label": "With exponential backoff",
+            "value": 6.0,
+            "color": "#10B981"
+          }
+        ],
+        "title": "Request Load During Failures (% of baseline)",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1240,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-14",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1260,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Problem #4: Flying Blind\n\nDeployed last week \u2192 broke yesterday \u2192 no idea why\n\nFix: Observe every transition, message, state change",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-15",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 1430,
+      "durationInFrames": 180,
+      "props": {
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "label": "Metric",
+        "value": 100
+      }
+    },
+    {
+      "id": "clip-16",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1600,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-17",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1620,
+      "durationInFrames": 180,
+      "props": {
+        "text": "The Pattern\n\n1. Narrow scope: One domain per agent\n2. Explicit protocols: JSON Schema contracts\n3. Versioned state: Every change gets a version\n4. Three-phase commits: Consistency guaranteed\n5. Circuit breakers: Fail fast, not silently\n6. Observability: See everything",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-18",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1790,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-19",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1810,
+      "durationInFrames": 180,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-20",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1990,
+      "durationInFrames": 410,
+      "props": {
+        "text": "Full Technical Guide + Code Examples\n\nsyntra-ai.vercel.app/blog\n\nIntelligence Layer Architects",
+        "fontSize": 44,
+        "backgroundColor": "rgba(15, 23, 42, 0.95)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

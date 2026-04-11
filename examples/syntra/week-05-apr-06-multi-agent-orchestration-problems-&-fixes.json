@@ -1,0 +1,236 @@
+{
+  "id": "week-05-apr-06-multi-agent-orchestration-problems---fixes",
+  "title": "Multi-Agent Orchestration Problems & Fixes",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Multi-Agent Systems Are Broken By Default",
+        "subtitle": "Here's why\u2014and how to fix it",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "accentColor": "#0D9488",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 80,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 75,
+      "props": {
+        "text": "Problem #1: Over-Decomposition",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 120,
+      "durationInFrames": 90,
+      "props": {
+        "text": "Too many agents = debugging 50 state machines instead of solving the problem",
+        "fontSize": 32,
+        "color": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 200,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 210,
+      "durationInFrames": 75,
+      "props": {
+        "text": "Problem #2: Silent State Divergence",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 240,
+      "durationInFrames": 90,
+      "props": {
+        "text": "Agent A commits. Agent B hasn't seen it. Data corruption you can't trace.",
+        "fontSize": 32,
+        "color": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 320,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-9",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 330,
+      "durationInFrames": 75,
+      "props": {
+        "text": "Problem #3: Failure Cascades",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 360,
+      "durationInFrames": 90,
+      "props": {
+        "text": "One timeout \u2192 all downstream systems in unknown state",
+        "fontSize": 32,
+        "color": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-11",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 440,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-12",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 450,
+      "durationInFrames": 75,
+      "props": {
+        "text": "The Solution: Observability First",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 480,
+      "durationInFrames": 90,
+      "props": {
+        "text": "Instrument every transition. Every message. Every state change.",
+        "fontSize": 32,
+        "color": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-14",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 560,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-15",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 570,
+      "durationInFrames": 90,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-16",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 600,
+      "durationInFrames": 600,
+      "props": {
+        "text": "Get the full guide \u2192 link in bio",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

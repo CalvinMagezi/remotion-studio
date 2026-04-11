@@ -1,0 +1,306 @@
+{
+  "id": "week-12-may-25-next-era---full-video",
+  "title": "Next Era - Full Video",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 9000,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 75,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "in",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "SplitScreen",
+      "trackId": "content",
+      "from": 90,
+      "durationInFrames": 1800,
+      "props": {
+        "leftContent": {
+          "type": "text",
+          "value": "talking-head"
+        },
+        "rightContent": {
+          "type": "text",
+          "value": "intelligence-evolution"
+        },
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 300,
+      "props": {
+        "text": "We're at an Inflection Point\nThe AI conversation is fundamentally shifting",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "LineChart",
+      "trackId": "content",
+      "from": 120,
+      "durationInFrames": 540,
+      "props": {
+        "title": "Three Eras of AI Adoption",
+        "data": [
+          {
+            "label": "2021",
+            "value": 20.0,
+            "color": "#F59E0B"
+          },
+          {
+            "label": "2023",
+            "value": 50.0,
+            "color": "#F59E0B"
+          },
+          {
+            "label": "2024",
+            "value": 60.0,
+            "color": "#0D9488"
+          }
+        ],
+        "backgroundColor": "transparent"
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 630,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "right",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 660,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Era 1 (2021): AI is Novelty\n'Can we use this?'",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 750,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Era 2 (2023): AI is Implementation\n'How do we deploy this?'",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 840,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Era 3 (2024): Institutional Intelligence\n'How do we make this permanent advantage?'",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1110,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "right",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1140,
+      "durationInFrames": 360,
+      "props": {
+        "text": "Five Practices of Intelligent Organizations\n1. Continuous decision capture (log with context)\n2. Pattern recognition (find what works)\n3. Real-time learning (fast feedback loops)\n4. Decision authority clarity (who decides?)\n5. Continuous org evolution (structure follows intelligence)",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-11",
+      "component": "ProgressRing",
+      "trackId": "content",
+      "from": 1170,
+      "durationInFrames": 450,
+      "props": {
+        "backgroundColor": "transparent",
+        "percentage": 0
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1590,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "right",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1620,
+      "durationInFrames": 360,
+      "props": {
+        "text": "Competitive Reality: 3-5 Year Outcomes\nWinners: Faster decisions, continuous learning, compounding advantages, retained knowledge\nLosers: Repeated mistakes, missed opportunities, knowledge loss, eroding advantages\n\nThe gap becomes a moat.",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-14",
+      "component": "LineChart",
+      "trackId": "content",
+      "from": 1650,
+      "durationInFrames": 540,
+      "props": {
+        "title": "Competitive Divergence Over 5 Years",
+        "data": [
+          {
+            "label": "Year 1",
+            "value": 50.0,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Year 2",
+            "value": 65.0,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Year 3",
+            "value": 82.0,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Year 5",
+            "value": 98.0,
+            "color": "#0D9488"
+          }
+        ],
+        "backgroundColor": "transparent"
+      }
+    },
+    {
+      "id": "clip-15",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 2160,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "up",
+        "backgroundColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-16",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 2190,
+      "durationInFrames": 210,
+      "props": {
+        "text": "The Next Era: Institutional Intelligence\n\nNot a technology to adopt.\nA way to systematically improve decision-making.\nA permanent, compounding competitive advantage.\n\nStart with one area. Build. Expand. Watch your advantage compound.\n\nsyntra-ai.vercel.app",
+        "backgroundColor": "#0D9488",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-17",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 2400,
+      "durationInFrames": 90,
+      "props": {
+        "title": "syntra-ai.vercel.app",
+        "subtitle": "Intelligence Layer Architects",
+        "backgroundColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-deep-ambient.mp3",
+    "volume": 0.1,
+    "startFrom": 0,
+    "attribution": "Syntra deep ambient \u2014 generated, royalty-free"
+  }
+}

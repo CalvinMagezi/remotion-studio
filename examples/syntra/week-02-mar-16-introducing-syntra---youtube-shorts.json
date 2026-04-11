@@ -1,0 +1,163 @@
+{
+  "id": "week-02-mar-16-introducing-syntra---youtube-shorts",
+  "title": "Introducing Syntra - YouTube Shorts",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 240,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 150,
+      "props": {
+        "title": "SYNTRA",
+        "subtitle": "Intelligence Layer Architects",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 140,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 150,
+      "durationInFrames": 180,
+      "props": {
+        "text": "FOUR FOUNDERS\nFROM NAIROBI",
+        "backgroundColor": "#0F172A",
+        "fontSize": 48,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 320,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 330,
+      "durationInFrames": 180,
+      "props": {
+        "text": "ISOLATED AI\n\u2192\nCOORDINATED AI",
+        "backgroundColor": "#0F172A",
+        "fontSize": 44,
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 500,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-7",
+      "component": "SplitScreen",
+      "trackId": "content",
+      "from": 510,
+      "durationInFrames": 150,
+      "props": {
+        "backgroundColor": "#0F172A",
+        "leftContent": {
+          "type": "text",
+          "value": "Agent HQ"
+        },
+        "rightContent": {
+          "type": "text",
+          "value": "ISLAs"
+        }
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 650,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-9",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 660,
+      "durationInFrames": 120,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#FFFFFF",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 675,
+      "durationInFrames": 105,
+      "props": {
+        "text": "syntra-ai.vercel.app",
+        "position": "bottom",
+        "fontSize": 36,
+        "textColor": "#0D9488"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

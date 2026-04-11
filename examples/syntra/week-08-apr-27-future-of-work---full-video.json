@@ -1,0 +1,455 @@
+{
+  "id": "week-08-apr-27-future-of-work---full-video",
+  "title": "Future of Work - Full Video",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 3435,
+  "backgroundColor": "#0F172A",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 80,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 90,
+      "durationInFrames": 180,
+      "props": {
+        "title": "The Future of Work Without Employees",
+        "color": "#FFFFFF",
+        "backgroundColor": "#0F172A",
+        "fontSize": 56,
+        "alignment": "center"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 260,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 270,
+      "durationInFrames": 120,
+      "props": {
+        "title": "The Agent-Augmented Model",
+        "color": "#F59E0B",
+        "backgroundColor": "#0F172A",
+        "fontSize": 44,
+        "alignment": "left",
+        "eyebrow": "Part 1"
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 380,
+      "durationInFrames": 15,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 395,
+      "durationInFrames": 240,
+      "props": {
+        "text": "Traditional: hire people to do work\nNew model: hire people to direct AI agents",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 625,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 640,
+      "durationInFrames": 240,
+      "props": {
+        "text": "Not about replacing humans\nAbout amplifying human capability 10x",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 870,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 885,
+      "durationInFrames": 240,
+      "props": {
+        "text": "Syntra: 4 co-founders, zero employees\nAI agents handle execution",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-11",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1115,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1130,
+      "durationInFrames": 120,
+      "props": {
+        "title": "How It Actually Works",
+        "color": "#F59E0B",
+        "backgroundColor": "#0F172A",
+        "fontSize": 44,
+        "alignment": "left",
+        "eyebrow": "Part 2"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1240,
+      "durationInFrames": 15,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-14",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1255,
+      "durationInFrames": 240,
+      "props": {
+        "text": "Each founder: strategic direction + oversight\nAI agents: research, drafting, analysis, coding",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-15",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1485,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-16",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1500,
+      "durationInFrames": 240,
+      "props": {
+        "text": "Persistent memory: agents remember everything\nMulti-agent orchestration: agents coordinate",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-17",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1730,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-18",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1745,
+      "durationInFrames": 240,
+      "props": {
+        "text": "Department-aware interfaces:\nMarketing agent, Engineering agent, Finance agent",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-19",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1975,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-20",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1990,
+      "durationInFrames": 120,
+      "props": {
+        "title": "The Organizational Shift",
+        "color": "#F59E0B",
+        "backgroundColor": "#0F172A",
+        "fontSize": 44,
+        "alignment": "left",
+        "eyebrow": "Part 3"
+      }
+    },
+    {
+      "id": "clip-21",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 2100,
+      "durationInFrames": 15,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-22",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 2115,
+      "durationInFrames": 240,
+      "props": {
+        "text": "From org chart to agent topology\nFrom headcount to capability count",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-23",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 2345,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-24",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 2360,
+      "durationInFrames": 240,
+      "props": {
+        "text": "Hiring question changes:\n'What role?' \u2192 'What capability?'",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-25",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 2590,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-26",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 2605,
+      "durationInFrames": 240,
+      "props": {
+        "text": "Cost structure inverts:\nPeople = strategy, AI = execution\nVariable cost, not fixed headcount",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 28
+      }
+    },
+    {
+      "id": "clip-27",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 2835,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-28",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 2850,
+      "durationInFrames": 90,
+      "props": {
+        "title": "By The Numbers",
+        "color": "#F59E0B",
+        "backgroundColor": "#0F172A",
+        "fontSize": 40
+      }
+    },
+    {
+      "id": "clip-29",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 2930,
+      "durationInFrames": 240,
+      "props": {
+        "data": [
+          {
+            "label": "Team Size",
+            "value": 4
+          },
+          {
+            "label": "Effective Output (people equiv.)",
+            "value": 40
+          },
+          {
+            "label": "Amplification Factor",
+            "value": 10
+          }
+        ],
+        "barColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "showValues": true,
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-30",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 3160,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-31",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 3175,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Experience Agent-Augmented Work\nsyntra-ai.vercel.app",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 36
+      }
+    },
+    {
+      "id": "clip-32",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 3315,
+      "durationInFrames": 120,
+      "props": {
+        "title": "syntra-ai.vercel.app",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-deep-ambient.mp3",
+    "volume": 0.1,
+    "startFrom": 0,
+    "attribution": "Syntra deep ambient \u2014 generated, royalty-free"
+  }
+}

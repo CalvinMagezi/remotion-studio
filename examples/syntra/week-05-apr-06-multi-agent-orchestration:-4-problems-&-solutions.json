@@ -1,0 +1,269 @@
+{
+  "id": "week-05-apr-06-multi-agent-orchestration--4-problems---solutions",
+  "title": "Multi-Agent Orchestration: 4 Problems & Solutions",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 1800,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Multi-Agent Systems Fail By Default",
+        "subtitle": "Here's why\u2014and how to fix it",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "accentColor": "#0D9488",
+        "fontSize": 52,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 80,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 100,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Problem #1: Over-Decomposition\n\nToo many agents \u2192 debugging 50 state machines",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 240,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 250,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Fix: Each agent owns ONE domain\n3X faster convergence",
+        "fontSize": 36,
+        "color": "#0D9488",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 390,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-7",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 400,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Problem #2: Silent State Divergence\n\nAgent A commits \u2192 Agent B never sees it",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 540,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-9",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 550,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Fix: Three-phase commits + versioned state\nRecovery guaranteed",
+        "fontSize": 36,
+        "color": "#0D9488",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 690,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-11",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 700,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Problem #3: Failure Cascades\n\nOne timeout \u2192 everything downstream fails",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 840,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-13",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 850,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Fix: Circuit breakers + exponential backoff\nFail fast, not silently",
+        "fontSize": 36,
+        "color": "#0D9488",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-14",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 990,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-15",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1000,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Problem #4: Flying Blind\n\nDeployed last week \u2192 broke yesterday \u2192 no idea why",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-16",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1140,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-17",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 1150,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Fix: Observability First\n\nInstrument every transition, message, state change",
+        "fontSize": 36,
+        "color": "#0D9488",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-18",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1290,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-19",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1300,
+      "durationInFrames": 200,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-20",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1500,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Get the full technical guide + code examples\nLink in bio",
+        "fontSize": 38,
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

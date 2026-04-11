@@ -1,0 +1,185 @@
+{
+  "id": "week-08-apr-27-token-budgets---youtube-short",
+  "title": "Token Budgets - YouTube Short",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1185,
+  "backgroundColor": "#0F172A",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 150,
+      "props": {
+        "title": "Your AI Is Burning\nMoney on Tokens",
+        "subtitle": "Token Budgets: Why They Matter",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 48,
+        "alignment": "center"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 140,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 150,
+      "durationInFrames": 210,
+      "props": {
+        "text": "Average app wastes 40% of tokens\non irrelevant context",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 34
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 350,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 370,
+      "durationInFrames": 210,
+      "props": {
+        "text": "Token Budget Framework:\nPrioritize \u2192 Compress \u2192 Cache",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 34
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 570,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 590,
+      "durationInFrames": 210,
+      "props": {
+        "text": "Result: Same quality output\n40-60% lower cost",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 34
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 790,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 810,
+      "durationInFrames": 180,
+      "props": {
+        "value": 40,
+        "label": "% Token Waste Eliminated",
+        "suffix": "%",
+        "color": "#F59E0B",
+        "fontSize": 72
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 980,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 995,
+      "durationInFrames": 120,
+      "props": {
+        "text": "Syntra: Intelligent Token Management",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-11",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1095,
+      "durationInFrames": 90,
+      "props": {
+        "title": "syntra-ai.vercel.app",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

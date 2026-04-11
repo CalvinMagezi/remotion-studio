@@ -1,0 +1,277 @@
+{
+  "id": "week-05-apr-06-building-ai-that-compounds-intelligence-over-time",
+  "title": "Building AI That Compounds Intelligence Over Time",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 5400,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 5400,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Compounding Intelligence",
+        "subtitle": "AI That Learns Over Time",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "accentColor": "#0D9488",
+        "fontSize": 72,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 80,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 100,
+      "durationInFrames": 120,
+      "props": {
+        "text": "By Allamano Ondego, Syntra Technologies Limited",
+        "fontSize": 32,
+        "color": "#F59E0B",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 210,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 230,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Most AI systems are amnesiacs\n\nSolve a problem \u2192 Forget everything\n\nWaste of intelligence",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#EF4444"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 400,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-7",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 420,
+      "durationInFrames": 180,
+      "props": {
+        "text": "What if AI learned from every interaction?\n\nMonth 1: Business-aware\nMonth 3: Company-expert\nYear 1: Institutional knowledge",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "LineChart",
+      "trackId": "content",
+      "from": 590,
+      "durationInFrames": 180,
+      "props": {
+        "data": [
+          {
+            "label": "Amnesiac AI",
+            "value": 36.0,
+            "color": "#EF4444"
+          },
+          {
+            "label": "Learning AI",
+            "value": 92.0,
+            "color": "#10B981"
+          }
+        ],
+        "title": "Business Understanding Over Time",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 760,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-10",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 780,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Mechanism #1: Persistent Context\n\nStore every observation\nMake it searchable and retrievable",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-11",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 950,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Mechanism #2: Contextual Learning\n\nEvery interaction teaches the system\nNo retraining required",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1120,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Mechanism #3: Prioritized Recall\n\nFrequent patterns weighted higher\nRecent decisions weighted higher",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1290,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-14",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 1310,
+      "durationInFrames": 180,
+      "props": {
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "label": "Metric",
+        "value": 100
+      }
+    },
+    {
+      "id": "clip-15",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1480,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-16",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1500,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Architecture\n\nCapture \u2192 Store \u2192 Retrieve \u2192 Integrate \u2192 Prioritize",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-17",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1670,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-18",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1690,
+      "durationInFrames": 180,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-19",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1870,
+      "durationInFrames": 530,
+      "props": {
+        "text": "Compounding intelligence is the next frontier in enterprise AI\n\nsyntra-ai.vercel.app/blog\n\nIntelligence Layer Architects",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.95)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

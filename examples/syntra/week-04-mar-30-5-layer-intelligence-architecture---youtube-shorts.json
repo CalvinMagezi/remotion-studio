@@ -1,0 +1,179 @@
+{
+  "id": "week-04-mar-30-5-layer-intelligence-architecture---youtube-shorts",
+  "title": "5-Layer Intelligence Architecture - YouTube Shorts",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 240,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 150,
+      "props": {
+        "title": "THE 5-LAYER STACK",
+        "subtitle": "Enterprise AI Architecture",
+        "backgroundColor": "#0F172A",
+        "fontSize": 56,
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 140,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 150,
+      "durationInFrames": 180,
+      "props": {
+        "text": "LAYER 1: MODEL ABSTRACTION",
+        "backgroundColor": "#0F172A",
+        "fontSize": 44,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 320,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 330,
+      "durationInFrames": 180,
+      "props": {
+        "text": "LAYER 2: ORCHESTRATION\nLAYER 3: CONTEXT",
+        "backgroundColor": "#0F172A",
+        "fontSize": 40,
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 500,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-7",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 510,
+      "durationInFrames": 180,
+      "props": {
+        "text": "LAYER 4: GOVERNANCE\nLAYER 5: DECISION",
+        "backgroundColor": "#0F172A",
+        "fontSize": 40,
+        "color": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 680,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-9",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 690,
+      "durationInFrames": 180,
+      "props": {
+        "text": "INTELLIGENT\nCOORDINATED\nCONTEXTUAL\nGOVERNED\nSCALABLE",
+        "backgroundColor": "#0F172A",
+        "fontSize": 38,
+        "color": "#22C55E"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 860,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-11",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 870,
+      "durationInFrames": 120,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#FFFFFF",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 885,
+      "durationInFrames": 105,
+      "props": {
+        "text": "syntra-ai.vercel.app",
+        "position": "bottom",
+        "fontSize": 36,
+        "textColor": "#0D9488"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

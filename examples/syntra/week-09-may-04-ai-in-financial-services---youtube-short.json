@@ -1,0 +1,96 @@
+{
+  "id": "week-09-may-04-ai-in-financial-services---youtube-short",
+  "title": "AI in Financial Services - YouTube Short",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 20,
+      "props": {
+        "backgroundColor": "#0F172A",
+        "direction": "in"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "AI in Financial Services",
+        "subtitle": "5 Architectural Principles",
+        "backgroundColor": "#0F172A",
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 360,
+      "props": {
+        "text": "1. Regulatory Architecture\n2. Risk Management First\n3. Data Sovereignty\n4. Hybrid Intelligence\n5. Consistency Over Time",
+        "backgroundColor": "#0F172A",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 420,
+      "durationInFrames": 25,
+      "props": {
+        "direction": "up",
+        "backgroundColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 445,
+      "durationInFrames": 135,
+      "props": {
+        "text": "Financial Services AI\nArchitecture > Models\n\nsyntra-ai.vercel.app",
+        "backgroundColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "id": "week-02-mar-16-introducing-syntra---full-company-video",
+  "title": "Introducing Syntra - Full Company Video",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 9000,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 900,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 180,
+      "props": {
+        "title": "THE AI INTEGRATION CHALLENGE",
+        "subtitle": "A story of fragmentation and solution",
+        "backgroundColor": "#0F172A",
+        "fontSize": 56,
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 170,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 180,
+      "durationInFrames": 180,
+      "props": {
+        "text": "100+ enterprises studied\nSame bottleneck: Disconnected AI tools",
+        "backgroundColor": "#0F172A",
+        "fontSize": 42,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 350,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 360,
+      "durationInFrames": 180,
+      "props": {
+        "title": "Meet the Founders",
+        "subtitle": "From Nairobi / Solving for Enterprise",
+        "backgroundColor": "#0F172A",
+        "fontSize": 52,
+        "color": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 530,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-7",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 540,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Calvin Magezi\nAllamano Ondego\nShawn Muraya\nGeorge Kyalo",
+        "backgroundColor": "#0F172A",
+        "fontSize": 40,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-9",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 720,
+      "durationInFrames": 180,
+      "props": {
+        "title": "SYNTRA",
+        "subtitle": "The Intelligence Layer Platform",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 890,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-11",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 900,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Connect All Models\nShare Context\nEnforce Governance\nCoordinate Decisions",
+        "backgroundColor": "#0F172A",
+        "fontSize": 38,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1070,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-13",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1080,
+      "durationInFrames": 180,
+      "props": {
+        "title": "AGENT HQ",
+        "subtitle": "For Developers",
+        "backgroundColor": "#0F172A",
+        "fontSize": 52,
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-14",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1250,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-15",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 1260,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Build intelligent agents that work together\nShare context and coordinate operations\nTest and deploy with confidence",
+        "backgroundColor": "#0F172A",
+        "fontSize": 36,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-16",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1430,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-17",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1440,
+      "durationInFrames": 180,
+      "props": {
+        "title": "ISLAs",
+        "subtitle": "For Enterprises",
+        "backgroundColor": "#0F172A",
+        "fontSize": 52,
+        "color": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-18",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1610,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-19",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 1620,
+      "durationInFrames": 180,
+      "props": {
+        "text": "AI that understands your institution\nAligned with your policies and goals\nMakes coherent decisions at scale",
+        "backgroundColor": "#0F172A",
+        "fontSize": 36,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-20",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1790,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-21",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1800,
+      "durationInFrames": 180,
+      "props": {
+        "title": "The Future of Enterprise AI",
+        "subtitle": "It's not about more models. It's about orchestration.",
+        "backgroundColor": "#0F172A",
+        "fontSize": 48,
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-22",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1970,
+      "durationInFrames": 30,
+      "props": {}
+    },
+    {
+      "id": "clip-23",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1980,
+      "durationInFrames": 180,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#FFFFFF",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-24",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 2010,
+      "durationInFrames": 150,
+      "props": {
+        "text": "syntra-ai.vercel.app",
+        "position": "bottom",
+        "fontSize": 48,
+        "textColor": "#0D9488"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-deep-ambient.mp3",
+    "volume": 0.1,
+    "startFrom": 0,
+    "attribution": "Syntra deep ambient \u2014 generated, royalty-free"
+  }
+}

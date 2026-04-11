@@ -1,0 +1,96 @@
+{
+  "id": "week-09-may-04-intelligence-layer-assessment---youtube-short",
+  "title": "Intelligence Layer Assessment - YouTube Short",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 20,
+      "props": {
+        "backgroundColor": "#0F172A",
+        "direction": "in"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Intelligence Layer Assessment",
+        "subtitle": "5 Dimensions That Predict Success",
+        "backgroundColor": "#0F172A",
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 360,
+      "props": {
+        "text": "\u2713 Data Governance (3.2x faster)\n\u2713 Cross-Functional Alignment\n\u2713 Right-Sized Infrastructure\n\u2713 Specific Use Cases (2-3)\n\u2713 Change Management (2.8x adoption)",
+        "backgroundColor": "#0F172A",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 420,
+      "durationInFrames": 25,
+      "props": {
+        "direction": "up",
+        "backgroundColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 445,
+      "durationInFrames": 135,
+      "props": {
+        "text": "Syntra\nIntelligence Layer Architects\nsyntra-ai.vercel.app",
+        "backgroundColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

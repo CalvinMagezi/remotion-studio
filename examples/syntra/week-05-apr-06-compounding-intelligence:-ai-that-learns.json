@@ -1,0 +1,205 @@
+{
+  "id": "week-05-apr-06-compounding-intelligence--ai-that-learns",
+  "title": "Compounding Intelligence: AI That Learns",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 1800,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "AI Amnesia Problem",
+        "subtitle": "Solves \u2192 Forgets \u2192 Repeats",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "accentColor": "#EF4444",
+        "fontSize": 52,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 80,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 100,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Week 1: Ask for help\nAI solves brilliantly\n\nWeek 2: Ask again\n'What's your business?'",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#EF4444"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 240,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 250,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Compounding Intelligence\n\nAI that learns from every interaction",
+        "fontSize": 44,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 390,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-7",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 400,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Three Mechanisms\n\n1. Persistent Context\n2. Contextual Learning\n3. Prioritized Recall",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 540,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-9",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 550,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Timeline\n\nWeek 1: Learning begins\nMonth 3: Company-aware\nYear 1: Institutional knowledge",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 690,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-11",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 700,
+      "durationInFrames": 150,
+      "props": {
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "label": "Metric",
+        "value": 100
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 840,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-13",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 850,
+      "durationInFrames": 200,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-14",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1050,
+      "durationInFrames": 750,
+      "props": {
+        "text": "Full technical guide next week\n\nLink in bio",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

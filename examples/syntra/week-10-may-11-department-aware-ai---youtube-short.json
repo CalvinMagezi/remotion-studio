@@ -1,0 +1,96 @@
+{
+  "id": "week-10-may-11-department-aware-ai---youtube-short",
+  "title": "Department-Aware AI - YouTube Short",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 20,
+      "props": {
+        "backgroundColor": "#0F172A",
+        "direction": "in"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Department-Aware AI",
+        "subtitle": "Enterprise Architecture That Works",
+        "backgroundColor": "#0F172A",
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 360,
+      "props": {
+        "text": "One System Problem:\n\u2022 Works for Sales\n\u2022 Not for Finance\n\u2022 Partially for Ops\n\u2022 Breaks Legal\n\nSolution: Department-Aware Context\nOne intelligent core\nMany departmental behaviors\nOne governance model",
+        "backgroundColor": "#0F172A",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 420,
+      "durationInFrames": 25,
+      "props": {
+        "direction": "up",
+        "backgroundColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 445,
+      "durationInFrames": 135,
+      "props": {
+        "text": "Enterprise AI That Actually Scales\nsyntra-ai.vercel.app",
+        "backgroundColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

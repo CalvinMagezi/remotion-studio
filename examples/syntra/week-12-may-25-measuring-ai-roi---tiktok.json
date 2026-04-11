@@ -1,0 +1,168 @@
+{
+  "id": "week-12-may-25-measuring-ai-roi---tiktok",
+  "title": "Measuring AI ROI - TikTok",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 15,
+      "props": {
+        "backgroundColor": "#0F172A",
+        "direction": "in"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 150,
+      "props": {
+        "title": "Measuring Intelligence Layer ROI",
+        "subtitle": "Honest Framework",
+        "backgroundColor": "#0F172A",
+        "accentColor": "#F59E0B",
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 150,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Four ways AI creates ROI:\n1. Cost reduction (6-9 months)\n2. Revenue enabling (12-18 months)\n3. Quality improvement (longer, high impact)\n4. Strategic positioning (years, highest value)",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "textColor": "#FFFFFF",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 420,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "left",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 450,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Real Case: Insurance Company\nBefore: 80 apps/day, 18% margin\nAfter: 240 apps/day, 22% margin\nPayback: <1 month\nYear 1 ROI: 1,265%",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "textColor": "#FFFFFF",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 720,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "left",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 750,
+      "durationInFrames": 300,
+      "props": {
+        "text": "How to Measure:\n\u2022 Get actual baselines\n\u2022 Define attribution clearly\n\u2022 Account for time horizons\n\u2022 Include hard-to-quantify value",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "textColor": "#FFFFFF",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1020,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "left",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1050,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Watch for Vendor Claims:\nIf they promise you'll lay people off\u2014be skeptical.\nGood AI redeployment. Not replacement.",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "textColor": "#FFFFFF",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1320,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "up",
+        "backgroundColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 1350,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Real ROI. Honest Measurement.\nsyntra-ai.vercel.app",
+        "backgroundColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-bright-ambient.mp3",
+    "volume": 0.15,
+    "startFrom": 0,
+    "attribution": "Syntra ambient pad \u2014 generated, royalty-free"
+  }
+}

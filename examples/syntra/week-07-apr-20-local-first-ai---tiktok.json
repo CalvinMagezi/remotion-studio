@@ -1,0 +1,161 @@
+{
+  "id": "week-07-apr-20-local-first-ai---tiktok",
+  "title": "Local-First AI - TikTok",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 900,
+  "backgroundColor": "#0F172A",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 120,
+      "props": {
+        "title": "Your data is leaving\nyour infrastructure",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 52,
+        "alignment": "center"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 110,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 120,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Cloud API: 500ms latency\n$2-5 per request\nData exposure: HIGH",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "fontSize": 36
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 290,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 310,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Local-First: 50ms latency\n$0.01 per request\nData exposure: ZERO",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "fontSize": 36
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 480,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 500,
+      "durationInFrames": 180,
+      "props": {
+        "text": "3 components:\nLocal Model Inference\nHybrid Processing\nPrivacy Boundary",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "position": "bottom",
+        "fontSize": 36
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 670,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 690,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Local-First = Mandatory\nsyntra-ai.vercel.app",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 40
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 810,
+      "durationInFrames": 90,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-bright-ambient.mp3",
+    "volume": 0.15,
+    "startFrom": 0,
+    "attribution": "Syntra ambient pad \u2014 generated, royalty-free"
+  }
+}

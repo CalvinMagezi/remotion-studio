@@ -1,0 +1,311 @@
+{
+  "id": "week-06-apr-13-the-role-of-forgetting-in-ai-memory-systems",
+  "title": "The Role of Forgetting in AI Memory Systems",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 5400,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 5400,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "The Role of Forgetting",
+        "subtitle": "in AI Memory Systems",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "accentColor": "#0D9488",
+        "fontSize": 72,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 80,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 100,
+      "durationInFrames": 120,
+      "props": {
+        "text": "By Shawn Muraya, Syntra Technologies Limited",
+        "fontSize": 32,
+        "color": "#F59E0B",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 210,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 230,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Perfect Memory = Perfect Curse\n\nStore 10,000 interactions\nSearch all 10,000 for 50 relevant\n\nResult: Slow, expensive, noisy",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#EF4444"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 400,
+      "durationInFrames": 180,
+      "props": {
+        "data": [
+          {
+            "label": "Perfect recall system",
+            "value": 60,
+            "color": "#EF4444"
+          },
+          {
+            "label": "Intelligent forgetting",
+            "value": 100,
+            "color": "#10B981"
+          }
+        ],
+        "title": "Performance Index",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "barColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 570,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-8",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 590,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Solution: Category 1 \u2014 Temporal Decay\n\nRecent: 100% weight \u2192 Old: 0% weight",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "LineChart",
+      "trackId": "content",
+      "from": 760,
+      "durationInFrames": 180,
+      "props": {
+        "data": [
+          {
+            "label": "Memory weight over time",
+            "value": 0.0,
+            "color": "#0D9488"
+          },
+          {
+            "label": "End",
+            "value": 0,
+            "color": "#0D9488"
+          }
+        ],
+        "title": "Temporal Decay: Days old \u2192 Weight",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 930,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-11",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 950,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Category 2 \u2014 Frequency Thresholding\n\nKeep: Patterns that repeat 2+ times\nDiscard: One-off anomalies",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 1120,
+      "durationInFrames": 180,
+      "props": {
+        "data": [
+          {
+            "label": "Pattern (9 occurrences)",
+            "value": 90,
+            "color": "#10B981"
+          },
+          {
+            "label": "Anomaly (1 occurrence)",
+            "value": 10,
+            "color": "#EF4444"
+          }
+        ],
+        "title": "Frequency Distribution",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "barColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1290,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-14",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1310,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Category 3 \u2014 Semantic Deduplication\n\n100 stored interactions \u2192 Keep 1\n\n80% memory savings",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-15",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 1480,
+      "durationInFrames": 180,
+      "props": {
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "label": "Metric",
+        "value": 100
+      }
+    },
+    {
+      "id": "clip-16",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1650,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-17",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1670,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Results of Intelligent Forgetting\n\n35% faster inference\n60% lower memory cost\n40% higher decision quality",
+        "fontSize": 48,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-18",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1840,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-19",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1860,
+      "durationInFrames": 180,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-20",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 2040,
+      "durationInFrames": 360,
+      "props": {
+        "text": "Intelligent forgetting is a feature, not a bug\n\nsyntra-ai.vercel.app/blog\n\nIntelligence Layer Architects",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.95)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

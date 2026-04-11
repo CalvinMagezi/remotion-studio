@@ -1,0 +1,205 @@
+{
+  "id": "week-05-apr-06-context-engineering--same-model--different-results",
+  "title": "Context Engineering: Same Model, Different Results",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 1800,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 150,
+      "props": {
+        "title": "Context Engineering",
+        "subtitle": "Same model. Different results.",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "accentColor": "#0D9488",
+        "fontSize": 52,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 140,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 160,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Not context engineering:\nDump data \u2192 hope for results",
+        "fontSize": 44,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#EF4444"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 330,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 350,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Principle #1: Relevance Filtering\n\nRemove noise\nImprove quality by 30%",
+        "fontSize": 44,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 520,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-7",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 540,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Principle #2: Sequential Ordering\n\nFirst = more influence\n\nControl sequence \u2192 control answer",
+        "fontSize": 44,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-9",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 730,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Principle #3: Implicit Knowledge\n\nEncode meaning through structure\n\nInfluence without explanation",
+        "fontSize": 44,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#10B981"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 900,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-11",
+      "component": "ProgressRing",
+      "trackId": "content",
+      "from": 920,
+      "durationInFrames": 200,
+      "props": {
+        "percentage": 100,
+        "label": "3X FASTER\nthan fine-tuning",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1110,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-13",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1130,
+      "durationInFrames": 150,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-14",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1280,
+      "durationInFrames": 520,
+      "props": {
+        "text": "Full technical guide next week\n\nLink in bio",
+        "fontSize": 42,
+        "backgroundColor": "rgba(15, 23, 42, 0.95)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

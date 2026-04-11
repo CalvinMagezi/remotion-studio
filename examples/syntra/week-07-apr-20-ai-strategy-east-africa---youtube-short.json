@@ -1,0 +1,185 @@
+{
+  "id": "week-07-apr-20-ai-strategy-east-africa---youtube-short",
+  "title": "AI Strategy East Africa - YouTube Short",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1185,
+  "backgroundColor": "#0F172A",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 150,
+      "props": {
+        "title": "Africa Needs Its Own\nAI Playbook",
+        "subtitle": "AI Strategy for East African Enterprises",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 48,
+        "alignment": "center"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 140,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 150,
+      "durationInFrames": 210,
+      "props": {
+        "text": "Mobile-first, multilingual\nLeapfrog opportunity in AI",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 34
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 350,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 370,
+      "durationInFrames": 210,
+      "props": {
+        "text": "Data sovereignty = competitive advantage\nLocal processing, local compliance",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 34
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 570,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 590,
+      "durationInFrames": 210,
+      "props": {
+        "text": "Build infrastructure that compounds\nDon't just consume cloud APIs",
+        "textColor": "#FFFFFF",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "fontSize": 34
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 790,
+      "durationInFrames": 20,
+      "props": {
+        "direction": "left",
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 810,
+      "durationInFrames": 180,
+      "props": {
+        "value": 35,
+        "label": "% YoY AI Growth in East Africa",
+        "suffix": "%",
+        "color": "#F59E0B",
+        "fontSize": 72
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 980,
+      "durationInFrames": 15,
+      "props": {
+        "color": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 995,
+      "durationInFrames": 120,
+      "props": {
+        "text": "Syntra: Built for African Enterprise",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-11",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1095,
+      "durationInFrames": 90,
+      "props": {
+        "title": "syntra-ai.vercel.app",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}

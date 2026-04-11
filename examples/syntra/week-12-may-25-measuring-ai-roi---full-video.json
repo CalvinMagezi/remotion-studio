@@ -1,0 +1,302 @@
+{
+  "id": "week-12-may-25-measuring-ai-roi---full-video",
+  "title": "Measuring AI ROI - Full Video",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 8550,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 75,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "in",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "SplitScreen",
+      "trackId": "content",
+      "from": 90,
+      "durationInFrames": 1860,
+      "props": {
+        "leftContent": {
+          "type": "text",
+          "value": "talking-head"
+        },
+        "rightContent": {
+          "type": "text",
+          "value": "roi-dashboard"
+        },
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 270,
+      "props": {
+        "text": "The Honest Question: How Do You Measure Intelligence Layer ROI?\nCFOs are right to be skeptical of AI claims",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 120,
+      "durationInFrames": 540,
+      "props": {
+        "title": "Four ROI Categories & Timelines",
+        "data": [
+          {
+            "label": "Direct Cost Reduction",
+            "value": 6,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Revenue Enabling",
+            "value": 15,
+            "color": "#F59E0B"
+          },
+          {
+            "label": "Quality Improvement",
+            "value": 18,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Strategic Positioning",
+            "value": 36,
+            "color": "#F59E0B"
+          }
+        ],
+        "backgroundColor": "transparent"
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 630,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "right",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 660,
+      "durationInFrames": 270,
+      "props": {
+        "text": "Category 1: Direct Cost Reduction\nAI reduces labor, materials, overhead costs\nMeasure: Cost before \u2192 Cost after + Attribution",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 690,
+      "durationInFrames": 240,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 900,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "right",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 930,
+      "durationInFrames": 270,
+      "props": {
+        "text": "Category 2: Revenue Enabling\nAI enables new markets, segments, revenue streams\nMeasure: New revenue addressable by AI + Customer acquisition cost",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#0D9488",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "LineChart",
+      "trackId": "content",
+      "from": 960,
+      "durationInFrames": 540,
+      "props": {
+        "title": "Revenue Impact Over Time",
+        "data": [
+          {
+            "label": "Month 1",
+            "value": 0.0,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Month 6",
+            "value": 30.0,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Month 12",
+            "value": 65.0,
+            "color": "#0D9488"
+          },
+          {
+            "label": "Month 18",
+            "value": 100.0,
+            "color": "#0D9488"
+          }
+        ],
+        "backgroundColor": "transparent"
+      }
+    },
+    {
+      "id": "clip-11",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1470,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "right",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1500,
+      "durationInFrames": 270,
+      "props": {
+        "text": "Real Case Study: Insurance Company\n$500M annual premium\nImplemented AI-augmented underwriting",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "SplitScreen",
+      "trackId": "content",
+      "from": 1530,
+      "durationInFrames": 360,
+      "props": {
+        "leftContent": {
+          "type": "text",
+          "value": "before-metrics"
+        },
+        "rightContent": {
+          "type": "text",
+          "value": "after-metrics"
+        },
+        "splitDirection": "vertical",
+        "backgroundColor": "transparent"
+      }
+    },
+    {
+      "id": "clip-14",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1860,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "up",
+        "backgroundColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-15",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1890,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Results:\nCost reduction: $7.3M/year\nRevenue enabling: $20M/year\nImplementation cost: $2M\nPayback: <1 month\nYear 1 ROI: 1,265%\n\nsyntra-ai.vercel.app",
+        "backgroundColor": "#0D9488",
+        "textColor": "#FFFFFF",
+        "accentColor": "#F59E0B",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-16",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 2070,
+      "durationInFrames": 90,
+      "props": {
+        "title": "syntra-ai.vercel.app",
+        "subtitle": "Intelligence Layer Architects",
+        "backgroundColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-deep-ambient.mp3",
+    "volume": 0.1,
+    "startFrom": 0,
+    "attribution": "Syntra deep ambient \u2014 generated, royalty-free"
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "week-11-may-18-consulting-approach-to-ai---tiktok",
+  "title": "Consulting Approach to AI - TikTok",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 15,
+      "props": {
+        "backgroundColor": "#0F172A",
+        "direction": "in"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 150,
+      "props": {
+        "title": "The Consulting Approach to AI",
+        "subtitle": "Assessment Before Implementation",
+        "backgroundColor": "#0F172A",
+        "accentColor": "#F59E0B",
+        "color": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 150,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Wrong: 'What AI should we buy?'\nRight: 'How do we architect AI?'\n\nThese lead to completely different outcomes.",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "textColor": "#FFFFFF",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-3",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 420,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "left",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 450,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Step 1: Assessment\nIs your organization actually ready?\n\nMost aren't. That's where you start.",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "textColor": "#FFFFFF",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-5",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 720,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "left",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 750,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Steps 2-3: Architecture\nDefine mission. Design systems.\nThis is unglamorous. It's where the work happens.",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "textColor": "#FFFFFF",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-7",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1020,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "left",
+        "backgroundColor": "#0F172A"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1050,
+      "durationInFrames": 300,
+      "props": {
+        "text": "Step 4: Vendor Selection\nAfter architecture is clear.\nYou pick vendors. Vendors don't pick you.",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "textColor": "#FFFFFF",
+        "position": "bottom"
+      }
+    },
+    {
+      "id": "clip-9",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 1320,
+      "durationInFrames": 30,
+      "props": {
+        "direction": "up",
+        "backgroundColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 1350,
+      "durationInFrames": 150,
+      "props": {
+        "text": "Step 5: Pilots \u2192 Scale\nEach stage teaches you\n\nsyntra-ai.vercel.app",
+        "backgroundColor": "#0D9488",
+        "accentColor": "#F59E0B",
+        "color": "#FFFFFF"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-bright-ambient.mp3",
+    "volume": 0.15,
+    "startFrom": 0,
+    "attribution": "Syntra ambient pad \u2014 generated, royalty-free"
+  }
+}

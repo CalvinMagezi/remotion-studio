@@ -1,0 +1,219 @@
+{
+  "id": "week-06-apr-13-intelligent-forgetting-in-ai-memory-systems",
+  "title": "Intelligent Forgetting in AI Memory Systems",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1800,
+  "backgroundColor": "#0f172a",
+  "tracks": [
+    {
+      "id": "background",
+      "label": "Background",
+      "zIndex": 0
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay",
+      "zIndex": 2
+    }
+  ],
+  "clips": [
+    {
+      "id": "clip-0",
+      "component": "TitleCard",
+      "trackId": "background",
+      "from": 0,
+      "durationInFrames": 1800,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg, #0a0a1a 0%, #0f172a 60%, #0d1f3c 100%)"
+      }
+    },
+    {
+      "id": "clip-1",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 150,
+      "props": {
+        "title": "Perfect Memory is a Curse",
+        "subtitle": "Intelligent forgetting wins",
+        "backgroundColor": "rgba(15, 23, 42, 0.9)",
+        "accentColor": "#EF4444",
+        "fontSize": 52,
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "clip-2",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 140,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-3",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 160,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Perfect recall: Store everything\nSearch through everything for what you need\n\nResult: Slow, expensive, noisy",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#EF4444"
+      }
+    },
+    {
+      "id": "clip-4",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 330,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-5",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 350,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Intelligent Forgetting\n\nMechanism #1: Temporal Decay\nRecent data: 100% weight\nOld data: fades to 0%",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    },
+    {
+      "id": "clip-6",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 520,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-7",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 540,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Mechanism #2: Frequency Thresholding\n\nKeep: Patterns that repeat\nForget: One-off anomalies",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-8",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-9",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 730,
+      "durationInFrames": 180,
+      "props": {
+        "text": "Mechanism #3: Semantic Deduplication\n\n100 identical conversations \u2192 Keep 1\n80% memory savings",
+        "fontSize": 40,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#10B981"
+      }
+    },
+    {
+      "id": "clip-10",
+      "component": "SlideTransition",
+      "trackId": "content",
+      "from": 900,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-11",
+      "component": "ProgressRing",
+      "trackId": "content",
+      "from": 920,
+      "durationInFrames": 120,
+      "props": {
+        "percentage": 100,
+        "label": "35% Better\nPerformance",
+        "backgroundColor": "rgba(15, 23, 42, 0.85)"
+      }
+    },
+    {
+      "id": "clip-12",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1050,
+      "durationInFrames": 120,
+      "props": {
+        "text": "60% Lower Cost\nFaster Inference\nClearer Signal",
+        "fontSize": 38,
+        "backgroundColor": "rgba(15, 23, 42, 0.85)",
+        "position": "bottom",
+        "textColor": "#F59E0B"
+      }
+    },
+    {
+      "id": "clip-13",
+      "component": "FadeTransition",
+      "trackId": "content",
+      "from": 1160,
+      "durationInFrames": 20,
+      "props": {}
+    },
+    {
+      "id": "clip-14",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1180,
+      "durationInFrames": 150,
+      "props": {
+        "title": "SYNTRA",
+        "color": "#0D9488",
+        "backgroundColor": "#0F172A",
+        "fontSize": 64,
+        "alignment": "center",
+        "letterSpacing": 8
+      }
+    },
+    {
+      "id": "clip-15",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1330,
+      "durationInFrames": 470,
+      "props": {
+        "text": "Full technical guide next week\n\nImplementation patterns\nCode examples\nA/B testing frameworks\n\nLink in bio",
+        "fontSize": 38,
+        "backgroundColor": "rgba(15, 23, 42, 0.95)",
+        "position": "bottom",
+        "textColor": "#0D9488"
+      }
+    }
+  ],
+  "audio": {
+    "src": "music/syntra-calm-pad.mp3",
+    "volume": 0.12,
+    "startFrom": 0,
+    "attribution": "Syntra calm pad \u2014 generated, royalty-free"
+  }
+}
