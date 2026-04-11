@@ -23,7 +23,7 @@ export const RemotionRoot: React.FC = () => (
       fps={30}
       width={1920}
       height={1080}
-      defaultProps={{ timeline: COMPOSITIONS[0]!.timeline as unknown as Timeline }}
+      defaultProps={{ timeline: COMPOSITIONS[0]?.timeline as unknown as Timeline }}
       calculateMetadata={({ props }) => {
         try {
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -35,7 +35,8 @@ export const RemotionRoot: React.FC = () => (
             height: t.height,
             props: { timeline: t },
           };
-        } catch {
+        } catch (err) {
+          console.error("[AgentComposition] calculateMetadata failed:", err);
           return {};
         }
       }}

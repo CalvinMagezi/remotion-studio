@@ -36,7 +36,7 @@ File: `src/mcp/tools/documentation.ts`
 Add the new component's shape and an example snippet to `docs_get_component_catalog` so AI agents discover it automatically.
 
 ## Step 5 — Smoke test
-1. Write a minimal timeline at `examples/legacy-reels/<component-name>-smoke.json` using the new component
+1. Write a minimal timeline at `examples/scratch/<component-name>-smoke.json` using the new component
 2. Run `bun run registry` — it must validate
 3. Launch `bun run dev` (remotion studio) and verify the composition appears
 4. Render 1 frame: `npx remotion still src/remotion/index.ts <id> out/smoke.png`

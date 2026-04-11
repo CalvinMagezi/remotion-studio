@@ -8,11 +8,12 @@
 
 import * as fs from "node:fs";
 import * as path from "node:path";
+import { fileURLToPath } from "node:url";
 import { TimelineSchema, type Timeline } from "../src/remotion/schema/timeline";
 
 // ── 1. Find all JSON files under examples/ ───────────────────────────────────
 
-const REPO_ROOT = path.resolve(import.meta.dir, "..");
+const REPO_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const EXAMPLES_DIR = path.join(REPO_ROOT, "examples");
 const OUT_FILE = path.join(
   REPO_ROOT,

@@ -2,8 +2,7 @@
   "mcpServers": {
     "remotion-studio": {
       "command": "bun",
-      "args": ["src/mcp/server.ts"],
-      "cwd": "/Users/calvinmagezi/Documents/GitHub/remotion-studio"
+      "args": ["src/mcp/server.ts"]
     }
   }
 }
