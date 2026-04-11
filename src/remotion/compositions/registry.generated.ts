@@ -2,168 +2,368 @@
 
 import type { Timeline } from "../schema/timeline";
 
-import tl_0 from "../../../examples/demo-timeline.json";
-import tl_1 from "../../../examples/legacy-reels/nextjs-api-reel-v1.json";
-import tl_2 from "../../../examples/legacy-reels/nextjs-app-router-reel-v2.json";
-import tl_3 from "../../../examples/nextjs-app-router-reel.json";
-import tl_4 from "../../../examples/syntra/week-01-mar-09-three-failures-of-enterprise-ai---youtube-shorts.json";
-import tl_5 from "../../../examples/syntra/week-01-mar-09-what-is-an-intelligence-layer---youtube-shorts.json";
-import tl_6 from "../../../examples/syntra/week-01-mar-09-why-ai-tools-dont-talk---youtube-shorts.json";
-import tl_7 from "../../../examples/syntra/week-02-mar-16-agent-hq-launch---youtube-shorts.json";
-import tl_8 from "../../../examples/syntra/week-02-mar-16-introducing-syntra---full-company-video.json";
-import tl_9 from "../../../examples/syntra/week-02-mar-16-introducing-syntra---youtube-shorts.json";
-import tl_10 from "../../../examples/syntra/week-02-mar-16-islas-launch---youtube-shorts.json";
-import tl_11 from "../../../examples/syntra/week-03-mar-23-model-agnostic-architecture---youtube-shorts.json";
-import tl_12 from "../../../examples/syntra/week-03-mar-23-platform-vs-intelligence-layer---youtube-shorts.json";
-import tl_13 from "../../../examples/syntra/week-03-mar-23-why-we-built-syntra---youtube-shorts.json";
-import tl_14 from "../../../examples/syntra/week-04-mar-30-5-layer-intelligence-architecture---youtube-shorts.json";
-import tl_15 from "../../../examples/syntra/week-04-mar-30-data-sovereignty-for-africa---youtube-shorts.json";
-import tl_16 from "../../../examples/syntra/week-04-mar-30-persistent-memory---youtube-shorts.json";
-import tl_17 from "../../../examples/syntra/week-05-apr-06-building-ai-that-compounds-intelligence-over-time.json";
-import tl_18 from "../../../examples/syntra/week-05-apr-06-compounding-intelligence--ai-systems-that-learn.json";
-import tl_19 from "../../../examples/syntra/week-05-apr-06-compounding-intelligence--ai-that-learns.json";
-import tl_20 from "../../../examples/syntra/week-05-apr-06-context-engineering--same-model-different-results.json";
-import tl_21 from "../../../examples/syntra/week-05-apr-06-context-engineering--the-new-frontier-of-ai.json";
-import tl_22 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration--4-problems-and-solutions.json";
-import tl_23 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration--a-practical-guide.json";
-import tl_24 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration-problems-and-fixes.json";
-import tl_25 from "../../../examples/syntra/week-06-apr-13-intelligent-forgetting-in-ai-memory-systems.json";
-import tl_26 from "../../../examples/syntra/week-06-apr-13-the-role-of-forgetting-in-ai-memory-systems.json";
-import tl_27 from "../../../examples/syntra/week-07-apr-20-ai-strategy-east-africa---full-video.json";
-import tl_28 from "../../../examples/syntra/week-07-apr-20-ai-strategy-east-africa---tiktok.json";
-import tl_29 from "../../../examples/syntra/week-07-apr-20-ai-strategy-east-africa---youtube-short.json";
-import tl_30 from "../../../examples/syntra/week-07-apr-20-knowledge-graphs---full-video.json";
-import tl_31 from "../../../examples/syntra/week-07-apr-20-knowledge-graphs---tiktok.json";
-import tl_32 from "../../../examples/syntra/week-07-apr-20-knowledge-graphs---youtube-short.json";
-import tl_33 from "../../../examples/syntra/week-07-apr-20-local-first-ai---full-video.json";
-import tl_34 from "../../../examples/syntra/week-07-apr-20-local-first-ai---tiktok.json";
-import tl_35 from "../../../examples/syntra/week-07-apr-20-local-first-ai---youtube-short.json";
-import tl_36 from "../../../examples/syntra/week-08-apr-27-future-of-work---full-video.json";
-import tl_37 from "../../../examples/syntra/week-08-apr-27-future-of-work---tiktok.json";
-import tl_38 from "../../../examples/syntra/week-08-apr-27-future-of-work---youtube-short.json";
-import tl_39 from "../../../examples/syntra/week-08-apr-27-generative-ui---full-video.json";
-import tl_40 from "../../../examples/syntra/week-08-apr-27-generative-ui---tiktok.json";
-import tl_41 from "../../../examples/syntra/week-08-apr-27-generative-ui---youtube-short.json";
-import tl_42 from "../../../examples/syntra/week-08-apr-27-token-budgets---full-video.json";
-import tl_43 from "../../../examples/syntra/week-08-apr-27-token-budgets---tiktok.json";
-import tl_44 from "../../../examples/syntra/week-08-apr-27-token-budgets---youtube-short.json";
-import tl_45 from "../../../examples/syntra/week-09-may-04-ai-competitive-moat---full-video.json";
-import tl_46 from "../../../examples/syntra/week-09-may-04-ai-competitive-moat---tiktok.json";
-import tl_47 from "../../../examples/syntra/week-09-may-04-ai-competitive-moat---youtube-short.json";
-import tl_48 from "../../../examples/syntra/week-09-may-04-ai-financial-services-architecture---full-video.json";
-import tl_49 from "../../../examples/syntra/week-09-may-04-ai-in-financial-services---tiktok.json";
-import tl_50 from "../../../examples/syntra/week-09-may-04-ai-in-financial-services---youtube-short.json";
-import tl_51 from "../../../examples/syntra/week-09-may-04-intelligence-layer-assessment---full-video.json";
-import tl_52 from "../../../examples/syntra/week-09-may-04-intelligence-layer-assessment---youtube-short.json";
-import tl_53 from "../../../examples/syntra/week-09-may-04-why-your-ai-initiative-stalled.json";
-import tl_54 from "../../../examples/syntra/week-10-may-11-100+-model-support---full-video.json";
-import tl_55 from "../../../examples/syntra/week-10-may-11-100+-model-support---tiktok.json";
-import tl_56 from "../../../examples/syntra/week-10-may-11-100+-model-support---youtube-short.json";
-import tl_57 from "../../../examples/syntra/week-10-may-11-agent-augmented-organizations---full-video.json";
-import tl_58 from "../../../examples/syntra/week-10-may-11-agent-augmented-organizations---tiktok.json";
-import tl_59 from "../../../examples/syntra/week-10-may-11-agent-augmented-organizations---youtube-short.json";
-import tl_60 from "../../../examples/syntra/week-10-may-11-department-aware-ai---full-video.json";
-import tl_61 from "../../../examples/syntra/week-10-may-11-department-aware-ai---tiktok.json";
-import tl_62 from "../../../examples/syntra/week-10-may-11-department-aware-ai---youtube-short.json";
-import tl_63 from "../../../examples/syntra/week-11-may-18-air-gapped-ai---full-video.json";
-import tl_64 from "../../../examples/syntra/week-11-may-18-air-gapped-ai---tiktok.json";
-import tl_65 from "../../../examples/syntra/week-11-may-18-air-gapped-ai---youtube-short.json";
-import tl_66 from "../../../examples/syntra/week-11-may-18-consulting-approach---full-video.json";
-import tl_67 from "../../../examples/syntra/week-11-may-18-consulting-approach---youtube-short.json";
-import tl_68 from "../../../examples/syntra/week-11-may-18-consulting-approach-to-ai---tiktok.json";
-import tl_69 from "../../../examples/syntra/week-11-may-18-private-ai---full-video.json";
-import tl_70 from "../../../examples/syntra/week-11-may-18-private-ai---tiktok.json";
-import tl_71 from "../../../examples/syntra/week-11-may-18-private-ai---youtube-short.json";
-import tl_72 from "../../../examples/syntra/week-12-may-25-how-we-use-our-products---full-video.json";
-import tl_73 from "../../../examples/syntra/week-12-may-25-how-we-use-our-products---tiktok.json";
-import tl_74 from "../../../examples/syntra/week-12-may-25-how-we-use-our-products---youtube-short.json";
-import tl_75 from "../../../examples/syntra/week-12-may-25-measuring-ai-roi---full-video.json";
-import tl_76 from "../../../examples/syntra/week-12-may-25-measuring-ai-roi---tiktok.json";
-import tl_77 from "../../../examples/syntra/week-12-may-25-measuring-ai-roi---youtube-short.json";
-import tl_78 from "../../../examples/syntra/week-12-may-25-next-era---full-video.json";
-import tl_79 from "../../../examples/syntra/week-12-may-25-next-era---youtube-short.json";
-import tl_80 from "../../../examples/syntra/week-12-may-25-next-era-of-institutional-intelligence---tiktok.json";
+import tl_0 from "../../../examples/academy/agile-ep1.json";
+import tl_1 from "../../../examples/academy/agile-ep2.json";
+import tl_2 from "../../../examples/academy/agile-ep3.json";
+import tl_3 from "../../../examples/academy/agile-ep4.json";
+import tl_4 from "../../../examples/academy/agile-ep5.json";
+import tl_5 from "../../../examples/academy/api-ep1.json";
+import tl_6 from "../../../examples/academy/api-ep2.json";
+import tl_7 from "../../../examples/academy/api-ep3.json";
+import tl_8 from "../../../examples/academy/api-ep4.json";
+import tl_9 from "../../../examples/academy/api-ep5.json";
+import tl_10 from "../../../examples/academy/auth-ep1.json";
+import tl_11 from "../../../examples/academy/auth-ep2.json";
+import tl_12 from "../../../examples/academy/auth-ep3.json";
+import tl_13 from "../../../examples/academy/auth-ep4.json";
+import tl_14 from "../../../examples/academy/auth-ep5.json";
+import tl_15 from "../../../examples/academy/cicd2-ep1.json";
+import tl_16 from "../../../examples/academy/cicd2-ep2.json";
+import tl_17 from "../../../examples/academy/cicd2-ep3.json";
+import tl_18 from "../../../examples/academy/cicd2-ep4.json";
+import tl_19 from "../../../examples/academy/cicd2-ep5.json";
+import tl_20 from "../../../examples/academy/cloud-ep1.json";
+import tl_21 from "../../../examples/academy/cloud-ep2.json";
+import tl_22 from "../../../examples/academy/cloud-ep3.json";
+import tl_23 from "../../../examples/academy/cloud-ep4.json";
+import tl_24 from "../../../examples/academy/cloud-ep5.json";
+import tl_25 from "../../../examples/academy/db-ep1.json";
+import tl_26 from "../../../examples/academy/db-ep2.json";
+import tl_27 from "../../../examples/academy/db-ep3.json";
+import tl_28 from "../../../examples/academy/db-ep4.json";
+import tl_29 from "../../../examples/academy/db-ep5.json";
+import tl_30 from "../../../examples/academy/devjob-ep1.json";
+import tl_31 from "../../../examples/academy/devjob-ep2.json";
+import tl_32 from "../../../examples/academy/devjob-ep3.json";
+import tl_33 from "../../../examples/academy/devjob-ep4.json";
+import tl_34 from "../../../examples/academy/devjob-ep5.json";
+import tl_35 from "../../../examples/academy/docker-ep1.json";
+import tl_36 from "../../../examples/academy/docker-ep2.json";
+import tl_37 from "../../../examples/academy/docker-ep3.json";
+import tl_38 from "../../../examples/academy/docker-ep4.json";
+import tl_39 from "../../../examples/academy/docker-ep5.json";
+import tl_40 from "../../../examples/academy/freelance-ep1.json";
+import tl_41 from "../../../examples/academy/freelance-ep2.json";
+import tl_42 from "../../../examples/academy/freelance-ep3.json";
+import tl_43 from "../../../examples/academy/freelance-ep4.json";
+import tl_44 from "../../../examples/academy/freelance-ep5.json";
+import tl_45 from "../../../examples/academy/git-ep1.json";
+import tl_46 from "../../../examples/academy/git-ep2.json";
+import tl_47 from "../../../examples/academy/git-ep3.json";
+import tl_48 from "../../../examples/academy/git-ep4.json";
+import tl_49 from "../../../examples/academy/git-ep5.json";
+import tl_50 from "../../../examples/academy/linux-ep1.json";
+import tl_51 from "../../../examples/academy/linux-ep2.json";
+import tl_52 from "../../../examples/academy/linux-ep3.json";
+import tl_53 from "../../../examples/academy/linux-ep4.json";
+import tl_54 from "../../../examples/academy/linux-ep5.json";
+import tl_55 from "../../../examples/academy/ml-ep1.json";
+import tl_56 from "../../../examples/academy/ml-ep2.json";
+import tl_57 from "../../../examples/academy/ml-ep3.json";
+import tl_58 from "../../../examples/academy/ml-ep4.json";
+import tl_59 from "../../../examples/academy/ml-ep5.json";
+import tl_60 from "../../../examples/academy/nextjs2-ep1.json";
+import tl_61 from "../../../examples/academy/nextjs2-ep2.json";
+import tl_62 from "../../../examples/academy/nextjs2-ep3.json";
+import tl_63 from "../../../examples/academy/nextjs2-ep4.json";
+import tl_64 from "../../../examples/academy/nextjs2-ep5.json";
+import tl_65 from "../../../examples/academy/nodejs-ep1.json";
+import tl_66 from "../../../examples/academy/nodejs-ep2.json";
+import tl_67 from "../../../examples/academy/nodejs-ep3.json";
+import tl_68 from "../../../examples/academy/nodejs-ep4.json";
+import tl_69 from "../../../examples/academy/nodejs-ep5.json";
+import tl_70 from "../../../examples/academy/prompt-ep1.json";
+import tl_71 from "../../../examples/academy/prompt-ep2.json";
+import tl_72 from "../../../examples/academy/prompt-ep3.json";
+import tl_73 from "../../../examples/academy/prompt-ep4.json";
+import tl_74 from "../../../examples/academy/prompt-ep5.json";
+import tl_75 from "../../../examples/academy/python-ep1.json";
+import tl_76 from "../../../examples/academy/python-ep2.json";
+import tl_77 from "../../../examples/academy/python-ep3.json";
+import tl_78 from "../../../examples/academy/python-ep4.json";
+import tl_79 from "../../../examples/academy/python-ep5.json";
+import tl_80 from "../../../examples/academy/react-ep1.json";
+import tl_81 from "../../../examples/academy/react-ep2.json";
+import tl_82 from "../../../examples/academy/react-ep3.json";
+import tl_83 from "../../../examples/academy/react-ep4.json";
+import tl_84 from "../../../examples/academy/react-ep5.json";
+import tl_85 from "../../../examples/academy/ts-ep1.json";
+import tl_86 from "../../../examples/academy/ts-ep2.json";
+import tl_87 from "../../../examples/academy/ts-ep3.json";
+import tl_88 from "../../../examples/academy/ts-ep4.json";
+import tl_89 from "../../../examples/academy/ts-ep5.json";
+import tl_90 from "../../../examples/academy/uiux-ep1.json";
+import tl_91 from "../../../examples/academy/uiux-ep2.json";
+import tl_92 from "../../../examples/academy/uiux-ep3.json";
+import tl_93 from "../../../examples/academy/uiux-ep4.json";
+import tl_94 from "../../../examples/academy/uiux-ep5.json";
+import tl_95 from "../../../examples/academy/webperf-ep1.json";
+import tl_96 from "../../../examples/academy/webperf-ep2.json";
+import tl_97 from "../../../examples/academy/webperf-ep3.json";
+import tl_98 from "../../../examples/academy/webperf-ep4.json";
+import tl_99 from "../../../examples/academy/webperf-ep5.json";
+import tl_100 from "../../../examples/demo-timeline.json";
+import tl_101 from "../../../examples/legacy-reels/nextjs-api-reel-v1.json";
+import tl_102 from "../../../examples/legacy-reels/nextjs-app-router-reel-v2.json";
+import tl_103 from "../../../examples/nextjs-app-router-reel.json";
+import tl_104 from "../../../examples/syntra/week-01-mar-09-three-failures-of-enterprise-ai---youtube-shorts.json";
+import tl_105 from "../../../examples/syntra/week-01-mar-09-what-is-an-intelligence-layer---youtube-shorts.json";
+import tl_106 from "../../../examples/syntra/week-01-mar-09-why-ai-tools-dont-talk---youtube-shorts.json";
+import tl_107 from "../../../examples/syntra/week-02-mar-16-agent-hq-launch---youtube-shorts.json";
+import tl_108 from "../../../examples/syntra/week-02-mar-16-introducing-syntra---full-company-video.json";
+import tl_109 from "../../../examples/syntra/week-02-mar-16-introducing-syntra---youtube-shorts.json";
+import tl_110 from "../../../examples/syntra/week-02-mar-16-islas-launch---youtube-shorts.json";
+import tl_111 from "../../../examples/syntra/week-03-mar-23-model-agnostic-architecture---youtube-shorts.json";
+import tl_112 from "../../../examples/syntra/week-03-mar-23-platform-vs-intelligence-layer---youtube-shorts.json";
+import tl_113 from "../../../examples/syntra/week-03-mar-23-why-we-built-syntra---youtube-shorts.json";
+import tl_114 from "../../../examples/syntra/week-04-mar-30-5-layer-intelligence-architecture---youtube-shorts.json";
+import tl_115 from "../../../examples/syntra/week-04-mar-30-data-sovereignty-for-africa---youtube-shorts.json";
+import tl_116 from "../../../examples/syntra/week-04-mar-30-persistent-memory---youtube-shorts.json";
+import tl_117 from "../../../examples/syntra/week-05-apr-06-building-ai-that-compounds-intelligence-over-time.json";
+import tl_118 from "../../../examples/syntra/week-05-apr-06-compounding-intelligence--ai-systems-that-learn.json";
+import tl_119 from "../../../examples/syntra/week-05-apr-06-compounding-intelligence--ai-that-learns.json";
+import tl_120 from "../../../examples/syntra/week-05-apr-06-context-engineering--same-model-different-results.json";
+import tl_121 from "../../../examples/syntra/week-05-apr-06-context-engineering--the-new-frontier-of-ai.json";
+import tl_122 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration--4-problems-and-solutions.json";
+import tl_123 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration--a-practical-guide.json";
+import tl_124 from "../../../examples/syntra/week-05-apr-06-multi-agent-orchestration-problems-and-fixes.json";
+import tl_125 from "../../../examples/syntra/week-06-apr-13-intelligent-forgetting-in-ai-memory-systems.json";
+import tl_126 from "../../../examples/syntra/week-06-apr-13-the-role-of-forgetting-in-ai-memory-systems.json";
+import tl_127 from "../../../examples/syntra/week-07-apr-20-ai-strategy-east-africa---full-video.json";
+import tl_128 from "../../../examples/syntra/week-07-apr-20-ai-strategy-east-africa---tiktok.json";
+import tl_129 from "../../../examples/syntra/week-07-apr-20-ai-strategy-east-africa---youtube-short.json";
+import tl_130 from "../../../examples/syntra/week-07-apr-20-knowledge-graphs---full-video.json";
+import tl_131 from "../../../examples/syntra/week-07-apr-20-knowledge-graphs---tiktok.json";
+import tl_132 from "../../../examples/syntra/week-07-apr-20-knowledge-graphs---youtube-short.json";
+import tl_133 from "../../../examples/syntra/week-07-apr-20-local-first-ai---full-video.json";
+import tl_134 from "../../../examples/syntra/week-07-apr-20-local-first-ai---tiktok.json";
+import tl_135 from "../../../examples/syntra/week-07-apr-20-local-first-ai---youtube-short.json";
+import tl_136 from "../../../examples/syntra/week-08-apr-27-future-of-work---full-video.json";
+import tl_137 from "../../../examples/syntra/week-08-apr-27-future-of-work---tiktok.json";
+import tl_138 from "../../../examples/syntra/week-08-apr-27-future-of-work---youtube-short.json";
+import tl_139 from "../../../examples/syntra/week-08-apr-27-generative-ui---full-video.json";
+import tl_140 from "../../../examples/syntra/week-08-apr-27-generative-ui---tiktok.json";
+import tl_141 from "../../../examples/syntra/week-08-apr-27-generative-ui---youtube-short.json";
+import tl_142 from "../../../examples/syntra/week-08-apr-27-token-budgets---full-video.json";
+import tl_143 from "../../../examples/syntra/week-08-apr-27-token-budgets---tiktok.json";
+import tl_144 from "../../../examples/syntra/week-08-apr-27-token-budgets---youtube-short.json";
+import tl_145 from "../../../examples/syntra/week-09-may-04-ai-competitive-moat---full-video.json";
+import tl_146 from "../../../examples/syntra/week-09-may-04-ai-competitive-moat---tiktok.json";
+import tl_147 from "../../../examples/syntra/week-09-may-04-ai-competitive-moat---youtube-short.json";
+import tl_148 from "../../../examples/syntra/week-09-may-04-ai-financial-services-architecture---full-video.json";
+import tl_149 from "../../../examples/syntra/week-09-may-04-ai-in-financial-services---tiktok.json";
+import tl_150 from "../../../examples/syntra/week-09-may-04-ai-in-financial-services---youtube-short.json";
+import tl_151 from "../../../examples/syntra/week-09-may-04-intelligence-layer-assessment---full-video.json";
+import tl_152 from "../../../examples/syntra/week-09-may-04-intelligence-layer-assessment---youtube-short.json";
+import tl_153 from "../../../examples/syntra/week-09-may-04-why-your-ai-initiative-stalled.json";
+import tl_154 from "../../../examples/syntra/week-10-may-11-100+-model-support---full-video.json";
+import tl_155 from "../../../examples/syntra/week-10-may-11-100+-model-support---tiktok.json";
+import tl_156 from "../../../examples/syntra/week-10-may-11-100+-model-support---youtube-short.json";
+import tl_157 from "../../../examples/syntra/week-10-may-11-agent-augmented-organizations---full-video.json";
+import tl_158 from "../../../examples/syntra/week-10-may-11-agent-augmented-organizations---tiktok.json";
+import tl_159 from "../../../examples/syntra/week-10-may-11-agent-augmented-organizations---youtube-short.json";
+import tl_160 from "../../../examples/syntra/week-10-may-11-department-aware-ai---full-video.json";
+import tl_161 from "../../../examples/syntra/week-10-may-11-department-aware-ai---tiktok.json";
+import tl_162 from "../../../examples/syntra/week-10-may-11-department-aware-ai---youtube-short.json";
+import tl_163 from "../../../examples/syntra/week-11-may-18-air-gapped-ai---full-video.json";
+import tl_164 from "../../../examples/syntra/week-11-may-18-air-gapped-ai---tiktok.json";
+import tl_165 from "../../../examples/syntra/week-11-may-18-air-gapped-ai---youtube-short.json";
+import tl_166 from "../../../examples/syntra/week-11-may-18-consulting-approach---full-video.json";
+import tl_167 from "../../../examples/syntra/week-11-may-18-consulting-approach---youtube-short.json";
+import tl_168 from "../../../examples/syntra/week-11-may-18-consulting-approach-to-ai---tiktok.json";
+import tl_169 from "../../../examples/syntra/week-11-may-18-private-ai---full-video.json";
+import tl_170 from "../../../examples/syntra/week-11-may-18-private-ai---tiktok.json";
+import tl_171 from "../../../examples/syntra/week-11-may-18-private-ai---youtube-short.json";
+import tl_172 from "../../../examples/syntra/week-12-may-25-how-we-use-our-products---full-video.json";
+import tl_173 from "../../../examples/syntra/week-12-may-25-how-we-use-our-products---tiktok.json";
+import tl_174 from "../../../examples/syntra/week-12-may-25-how-we-use-our-products---youtube-short.json";
+import tl_175 from "../../../examples/syntra/week-12-may-25-measuring-ai-roi---full-video.json";
+import tl_176 from "../../../examples/syntra/week-12-may-25-measuring-ai-roi---tiktok.json";
+import tl_177 from "../../../examples/syntra/week-12-may-25-measuring-ai-roi---youtube-short.json";
+import tl_178 from "../../../examples/syntra/week-12-may-25-next-era---full-video.json";
+import tl_179 from "../../../examples/syntra/week-12-may-25-next-era---youtube-short.json";
+import tl_180 from "../../../examples/syntra/week-12-may-25-next-era-of-institutional-intelligence---tiktok.json";
 
 export const COMPOSITIONS: readonly { id: string; timeline: Timeline }[] = [
-  { id: "ai-quarterly-review", timeline: tl_0 as unknown as Timeline },
-  { id: "NextjsApiReelV1", timeline: tl_1 as unknown as Timeline },
-  { id: "NextjsAppRouterReelV2", timeline: tl_2 as unknown as Timeline },
-  { id: "nextjs-app-router-reel", timeline: tl_3 as unknown as Timeline },
-  { id: "week-01-mar-09-three-failures-of-enterprise-ai---youtube-shorts", timeline: tl_4 as unknown as Timeline },
-  { id: "week-01-mar-09-what-is-an-intelligence-layer---youtube-shorts", timeline: tl_5 as unknown as Timeline },
-  { id: "week-01-mar-09-why-ai-tools-don-t-talk---youtube-shorts", timeline: tl_6 as unknown as Timeline },
-  { id: "week-02-mar-16-agent-hq-launch---youtube-shorts", timeline: tl_7 as unknown as Timeline },
-  { id: "week-02-mar-16-introducing-syntra---full-company-video", timeline: tl_8 as unknown as Timeline },
-  { id: "week-02-mar-16-introducing-syntra---youtube-shorts", timeline: tl_9 as unknown as Timeline },
-  { id: "week-02-mar-16-islas-launch---youtube-shorts", timeline: tl_10 as unknown as Timeline },
-  { id: "week-03-mar-23-model-agnostic-architecture---youtube-shorts", timeline: tl_11 as unknown as Timeline },
-  { id: "week-03-mar-23-platform-vs-intelligence-layer---youtube-shorts", timeline: tl_12 as unknown as Timeline },
-  { id: "week-03-mar-23-why-we-built-syntra---youtube-shorts", timeline: tl_13 as unknown as Timeline },
-  { id: "week-04-mar-30-5-layer-intelligence-architecture---youtube-shorts", timeline: tl_14 as unknown as Timeline },
-  { id: "week-04-mar-30-data-sovereignty-for-africa---youtube-shorts", timeline: tl_15 as unknown as Timeline },
-  { id: "week-04-mar-30-persistent-memory---youtube-shorts", timeline: tl_16 as unknown as Timeline },
-  { id: "week-05-apr-06-building-ai-that-compounds-intelligence-over-time", timeline: tl_17 as unknown as Timeline },
-  { id: "week-05-apr-06-compounding-intelligence--ai-systems-that-learn", timeline: tl_18 as unknown as Timeline },
-  { id: "week-05-apr-06-compounding-intelligence--ai-that-learns", timeline: tl_19 as unknown as Timeline },
-  { id: "week-05-apr-06-context-engineering--same-model--different-results", timeline: tl_20 as unknown as Timeline },
-  { id: "week-05-apr-06-context-engineering--the-new-frontier-of-ai", timeline: tl_21 as unknown as Timeline },
-  { id: "week-05-apr-06-multi-agent-orchestration--4-problems---solutions", timeline: tl_22 as unknown as Timeline },
-  { id: "week-05-apr-06-multi-agent-orchestration--a-practical-guide", timeline: tl_23 as unknown as Timeline },
-  { id: "week-05-apr-06-multi-agent-orchestration-problems---fixes", timeline: tl_24 as unknown as Timeline },
-  { id: "week-06-apr-13-intelligent-forgetting-in-ai-memory-systems", timeline: tl_25 as unknown as Timeline },
-  { id: "week-06-apr-13-the-role-of-forgetting-in-ai-memory-systems", timeline: tl_26 as unknown as Timeline },
-  { id: "week-07-apr-20-ai-strategy-east-africa---full-video", timeline: tl_27 as unknown as Timeline },
-  { id: "week-07-apr-20-ai-strategy-east-africa---tiktok", timeline: tl_28 as unknown as Timeline },
-  { id: "week-07-apr-20-ai-strategy-east-africa---youtube-short", timeline: tl_29 as unknown as Timeline },
-  { id: "week-07-apr-20-knowledge-graphs---full-video", timeline: tl_30 as unknown as Timeline },
-  { id: "week-07-apr-20-knowledge-graphs---tiktok", timeline: tl_31 as unknown as Timeline },
-  { id: "week-07-apr-20-knowledge-graphs---youtube-short", timeline: tl_32 as unknown as Timeline },
-  { id: "week-07-apr-20-local-first-ai---full-video", timeline: tl_33 as unknown as Timeline },
-  { id: "week-07-apr-20-local-first-ai---tiktok", timeline: tl_34 as unknown as Timeline },
-  { id: "week-07-apr-20-local-first-ai---youtube-short", timeline: tl_35 as unknown as Timeline },
-  { id: "week-08-apr-27-future-of-work---full-video", timeline: tl_36 as unknown as Timeline },
-  { id: "week-08-apr-27-future-of-work---tiktok", timeline: tl_37 as unknown as Timeline },
-  { id: "week-08-apr-27-future-of-work---youtube-short", timeline: tl_38 as unknown as Timeline },
-  { id: "week-08-apr-27-generative-ui---full-video", timeline: tl_39 as unknown as Timeline },
-  { id: "week-08-apr-27-generative-ui---tiktok", timeline: tl_40 as unknown as Timeline },
-  { id: "week-08-apr-27-generative-ui---youtube-short", timeline: tl_41 as unknown as Timeline },
-  { id: "week-08-apr-27-token-budgets---full-video", timeline: tl_42 as unknown as Timeline },
-  { id: "week-08-apr-27-token-budgets---tiktok", timeline: tl_43 as unknown as Timeline },
-  { id: "week-08-apr-27-token-budgets---youtube-short", timeline: tl_44 as unknown as Timeline },
-  { id: "week-09-may-04-ai-competitive-moat---full-video", timeline: tl_45 as unknown as Timeline },
-  { id: "week-09-may-04-ai-competitive-moat---tiktok", timeline: tl_46 as unknown as Timeline },
-  { id: "week-09-may-04-ai-competitive-moat---youtube-short", timeline: tl_47 as unknown as Timeline },
-  { id: "week-09-may-04-ai-financial-services-architecture---full-video", timeline: tl_48 as unknown as Timeline },
-  { id: "week-09-may-04-ai-in-financial-services---tiktok", timeline: tl_49 as unknown as Timeline },
-  { id: "week-09-may-04-ai-in-financial-services---youtube-short", timeline: tl_50 as unknown as Timeline },
-  { id: "week-09-may-04-intelligence-layer-assessment---full-video", timeline: tl_51 as unknown as Timeline },
-  { id: "week-09-may-04-intelligence-layer-assessment---youtube-short", timeline: tl_52 as unknown as Timeline },
-  { id: "week-09-may-04-why-your-ai-initiative-stalled", timeline: tl_53 as unknown as Timeline },
-  { id: "week-10-may-11-100--model-support---full-video", timeline: tl_54 as unknown as Timeline },
-  { id: "week-10-may-11-100--model-support---tiktok", timeline: tl_55 as unknown as Timeline },
-  { id: "week-10-may-11-100--model-support---youtube-short", timeline: tl_56 as unknown as Timeline },
-  { id: "week-10-may-11-agent-augmented-organizations---full-video", timeline: tl_57 as unknown as Timeline },
-  { id: "week-10-may-11-agent-augmented-organizations---tiktok", timeline: tl_58 as unknown as Timeline },
-  { id: "week-10-may-11-agent-augmented-organizations---youtube-short", timeline: tl_59 as unknown as Timeline },
-  { id: "week-10-may-11-department-aware-ai---full-video", timeline: tl_60 as unknown as Timeline },
-  { id: "week-10-may-11-department-aware-ai---tiktok", timeline: tl_61 as unknown as Timeline },
-  { id: "week-10-may-11-department-aware-ai---youtube-short", timeline: tl_62 as unknown as Timeline },
-  { id: "week-11-may-18-air-gapped-ai---full-video", timeline: tl_63 as unknown as Timeline },
-  { id: "week-11-may-18-air-gapped-ai---tiktok", timeline: tl_64 as unknown as Timeline },
-  { id: "week-11-may-18-air-gapped-ai---youtube-short", timeline: tl_65 as unknown as Timeline },
-  { id: "week-11-may-18-consulting-approach---full-video", timeline: tl_66 as unknown as Timeline },
-  { id: "week-11-may-18-consulting-approach---youtube-short", timeline: tl_67 as unknown as Timeline },
-  { id: "week-11-may-18-consulting-approach-to-ai---tiktok", timeline: tl_68 as unknown as Timeline },
-  { id: "week-11-may-18-private-ai---full-video", timeline: tl_69 as unknown as Timeline },
-  { id: "week-11-may-18-private-ai---tiktok", timeline: tl_70 as unknown as Timeline },
-  { id: "week-11-may-18-private-ai---youtube-short", timeline: tl_71 as unknown as Timeline },
-  { id: "week-12-may-25-how-we-use-our-products---full-video", timeline: tl_72 as unknown as Timeline },
-  { id: "week-12-may-25-how-we-use-our-products---tiktok", timeline: tl_73 as unknown as Timeline },
-  { id: "week-12-may-25-how-we-use-our-products---youtube-short", timeline: tl_74 as unknown as Timeline },
-  { id: "week-12-may-25-measuring-ai-roi---full-video", timeline: tl_75 as unknown as Timeline },
-  { id: "week-12-may-25-measuring-ai-roi---tiktok", timeline: tl_76 as unknown as Timeline },
-  { id: "week-12-may-25-measuring-ai-roi---youtube-short", timeline: tl_77 as unknown as Timeline },
-  { id: "week-12-may-25-next-era---full-video", timeline: tl_78 as unknown as Timeline },
-  { id: "week-12-may-25-next-era---youtube-short", timeline: tl_79 as unknown as Timeline },
-  { id: "week-12-may-25-next-era-of-institutional-intelligence---tiktok", timeline: tl_80 as unknown as Timeline }
+  { id: "agile-ep1", timeline: tl_0 as unknown as Timeline },
+  { id: "agile-ep2", timeline: tl_1 as unknown as Timeline },
+  { id: "agile-ep3", timeline: tl_2 as unknown as Timeline },
+  { id: "agile-ep4", timeline: tl_3 as unknown as Timeline },
+  { id: "agile-ep5", timeline: tl_4 as unknown as Timeline },
+  { id: "api-ep1", timeline: tl_5 as unknown as Timeline },
+  { id: "api-ep2", timeline: tl_6 as unknown as Timeline },
+  { id: "api-ep3", timeline: tl_7 as unknown as Timeline },
+  { id: "api-ep4", timeline: tl_8 as unknown as Timeline },
+  { id: "api-ep5", timeline: tl_9 as unknown as Timeline },
+  { id: "auth-ep1", timeline: tl_10 as unknown as Timeline },
+  { id: "auth-ep2", timeline: tl_11 as unknown as Timeline },
+  { id: "auth-ep3", timeline: tl_12 as unknown as Timeline },
+  { id: "auth-ep4", timeline: tl_13 as unknown as Timeline },
+  { id: "auth-ep5", timeline: tl_14 as unknown as Timeline },
+  { id: "cicd2-ep1", timeline: tl_15 as unknown as Timeline },
+  { id: "cicd2-ep2", timeline: tl_16 as unknown as Timeline },
+  { id: "cicd2-ep3", timeline: tl_17 as unknown as Timeline },
+  { id: "cicd2-ep4", timeline: tl_18 as unknown as Timeline },
+  { id: "cicd2-ep5", timeline: tl_19 as unknown as Timeline },
+  { id: "cloud-ep1", timeline: tl_20 as unknown as Timeline },
+  { id: "cloud-ep2", timeline: tl_21 as unknown as Timeline },
+  { id: "cloud-ep3", timeline: tl_22 as unknown as Timeline },
+  { id: "cloud-ep4", timeline: tl_23 as unknown as Timeline },
+  { id: "cloud-ep5", timeline: tl_24 as unknown as Timeline },
+  { id: "db-ep1", timeline: tl_25 as unknown as Timeline },
+  { id: "db-ep2", timeline: tl_26 as unknown as Timeline },
+  { id: "db-ep3", timeline: tl_27 as unknown as Timeline },
+  { id: "db-ep4", timeline: tl_28 as unknown as Timeline },
+  { id: "db-ep5", timeline: tl_29 as unknown as Timeline },
+  { id: "devjob-ep1", timeline: tl_30 as unknown as Timeline },
+  { id: "devjob-ep2", timeline: tl_31 as unknown as Timeline },
+  { id: "devjob-ep3", timeline: tl_32 as unknown as Timeline },
+  { id: "devjob-ep4", timeline: tl_33 as unknown as Timeline },
+  { id: "devjob-ep5", timeline: tl_34 as unknown as Timeline },
+  { id: "docker-ep1", timeline: tl_35 as unknown as Timeline },
+  { id: "docker-ep2", timeline: tl_36 as unknown as Timeline },
+  { id: "docker-ep3", timeline: tl_37 as unknown as Timeline },
+  { id: "docker-ep4", timeline: tl_38 as unknown as Timeline },
+  { id: "docker-ep5", timeline: tl_39 as unknown as Timeline },
+  { id: "freelance-ep1", timeline: tl_40 as unknown as Timeline },
+  { id: "freelance-ep2", timeline: tl_41 as unknown as Timeline },
+  { id: "freelance-ep3", timeline: tl_42 as unknown as Timeline },
+  { id: "freelance-ep4", timeline: tl_43 as unknown as Timeline },
+  { id: "freelance-ep5", timeline: tl_44 as unknown as Timeline },
+  { id: "git-ep1", timeline: tl_45 as unknown as Timeline },
+  { id: "git-ep2", timeline: tl_46 as unknown as Timeline },
+  { id: "git-ep3", timeline: tl_47 as unknown as Timeline },
+  { id: "git-ep4", timeline: tl_48 as unknown as Timeline },
+  { id: "git-ep5", timeline: tl_49 as unknown as Timeline },
+  { id: "linux-ep1", timeline: tl_50 as unknown as Timeline },
+  { id: "linux-ep2", timeline: tl_51 as unknown as Timeline },
+  { id: "linux-ep3", timeline: tl_52 as unknown as Timeline },
+  { id: "linux-ep4", timeline: tl_53 as unknown as Timeline },
+  { id: "linux-ep5", timeline: tl_54 as unknown as Timeline },
+  { id: "ml-ep1", timeline: tl_55 as unknown as Timeline },
+  { id: "ml-ep2", timeline: tl_56 as unknown as Timeline },
+  { id: "ml-ep3", timeline: tl_57 as unknown as Timeline },
+  { id: "ml-ep4", timeline: tl_58 as unknown as Timeline },
+  { id: "ml-ep5", timeline: tl_59 as unknown as Timeline },
+  { id: "nextjs2-ep1", timeline: tl_60 as unknown as Timeline },
+  { id: "nextjs2-ep2", timeline: tl_61 as unknown as Timeline },
+  { id: "nextjs2-ep3", timeline: tl_62 as unknown as Timeline },
+  { id: "nextjs2-ep4", timeline: tl_63 as unknown as Timeline },
+  { id: "nextjs2-ep5", timeline: tl_64 as unknown as Timeline },
+  { id: "nodejs-ep1", timeline: tl_65 as unknown as Timeline },
+  { id: "nodejs-ep2", timeline: tl_66 as unknown as Timeline },
+  { id: "nodejs-ep3", timeline: tl_67 as unknown as Timeline },
+  { id: "nodejs-ep4", timeline: tl_68 as unknown as Timeline },
+  { id: "nodejs-ep5", timeline: tl_69 as unknown as Timeline },
+  { id: "prompt-ep1", timeline: tl_70 as unknown as Timeline },
+  { id: "prompt-ep2", timeline: tl_71 as unknown as Timeline },
+  { id: "prompt-ep3", timeline: tl_72 as unknown as Timeline },
+  { id: "prompt-ep4", timeline: tl_73 as unknown as Timeline },
+  { id: "prompt-ep5", timeline: tl_74 as unknown as Timeline },
+  { id: "python-ep1", timeline: tl_75 as unknown as Timeline },
+  { id: "python-ep2", timeline: tl_76 as unknown as Timeline },
+  { id: "python-ep3", timeline: tl_77 as unknown as Timeline },
+  { id: "python-ep4", timeline: tl_78 as unknown as Timeline },
+  { id: "python-ep5", timeline: tl_79 as unknown as Timeline },
+  { id: "react-ep1", timeline: tl_80 as unknown as Timeline },
+  { id: "react-ep2", timeline: tl_81 as unknown as Timeline },
+  { id: "react-ep3", timeline: tl_82 as unknown as Timeline },
+  { id: "react-ep4", timeline: tl_83 as unknown as Timeline },
+  { id: "react-ep5", timeline: tl_84 as unknown as Timeline },
+  { id: "ts-ep1", timeline: tl_85 as unknown as Timeline },
+  { id: "ts-ep2", timeline: tl_86 as unknown as Timeline },
+  { id: "ts-ep3", timeline: tl_87 as unknown as Timeline },
+  { id: "ts-ep4", timeline: tl_88 as unknown as Timeline },
+  { id: "ts-ep5", timeline: tl_89 as unknown as Timeline },
+  { id: "uiux-ep1", timeline: tl_90 as unknown as Timeline },
+  { id: "uiux-ep2", timeline: tl_91 as unknown as Timeline },
+  { id: "uiux-ep3", timeline: tl_92 as unknown as Timeline },
+  { id: "uiux-ep4", timeline: tl_93 as unknown as Timeline },
+  { id: "uiux-ep5", timeline: tl_94 as unknown as Timeline },
+  { id: "webperf-ep1", timeline: tl_95 as unknown as Timeline },
+  { id: "webperf-ep2", timeline: tl_96 as unknown as Timeline },
+  { id: "webperf-ep3", timeline: tl_97 as unknown as Timeline },
+  { id: "webperf-ep4", timeline: tl_98 as unknown as Timeline },
+  { id: "webperf-ep5", timeline: tl_99 as unknown as Timeline },
+  { id: "ai-quarterly-review", timeline: tl_100 as unknown as Timeline },
+  { id: "NextjsApiReelV1", timeline: tl_101 as unknown as Timeline },
+  { id: "NextjsAppRouterReelV2", timeline: tl_102 as unknown as Timeline },
+  { id: "nextjs-app-router-reel", timeline: tl_103 as unknown as Timeline },
+  { id: "week-01-mar-09-three-failures-of-enterprise-ai---youtube-shorts", timeline: tl_104 as unknown as Timeline },
+  { id: "week-01-mar-09-what-is-an-intelligence-layer---youtube-shorts", timeline: tl_105 as unknown as Timeline },
+  { id: "week-01-mar-09-why-ai-tools-don-t-talk---youtube-shorts", timeline: tl_106 as unknown as Timeline },
+  { id: "week-02-mar-16-agent-hq-launch---youtube-shorts", timeline: tl_107 as unknown as Timeline },
+  { id: "week-02-mar-16-introducing-syntra---full-company-video", timeline: tl_108 as unknown as Timeline },
+  { id: "week-02-mar-16-introducing-syntra---youtube-shorts", timeline: tl_109 as unknown as Timeline },
+  { id: "week-02-mar-16-islas-launch---youtube-shorts", timeline: tl_110 as unknown as Timeline },
+  { id: "week-03-mar-23-model-agnostic-architecture---youtube-shorts", timeline: tl_111 as unknown as Timeline },
+  { id: "week-03-mar-23-platform-vs-intelligence-layer---youtube-shorts", timeline: tl_112 as unknown as Timeline },
+  { id: "week-03-mar-23-why-we-built-syntra---youtube-shorts", timeline: tl_113 as unknown as Timeline },
+  { id: "week-04-mar-30-5-layer-intelligence-architecture---youtube-shorts", timeline: tl_114 as unknown as Timeline },
+  { id: "week-04-mar-30-data-sovereignty-for-africa---youtube-shorts", timeline: tl_115 as unknown as Timeline },
+  { id: "week-04-mar-30-persistent-memory---youtube-shorts", timeline: tl_116 as unknown as Timeline },
+  { id: "week-05-apr-06-building-ai-that-compounds-intelligence-over-time", timeline: tl_117 as unknown as Timeline },
+  { id: "week-05-apr-06-compounding-intelligence--ai-systems-that-learn", timeline: tl_118 as unknown as Timeline },
+  { id: "week-05-apr-06-compounding-intelligence--ai-that-learns", timeline: tl_119 as unknown as Timeline },
+  { id: "week-05-apr-06-context-engineering--same-model--different-results", timeline: tl_120 as unknown as Timeline },
+  { id: "week-05-apr-06-context-engineering--the-new-frontier-of-ai", timeline: tl_121 as unknown as Timeline },
+  { id: "week-05-apr-06-multi-agent-orchestration--4-problems---solutions", timeline: tl_122 as unknown as Timeline },
+  { id: "week-05-apr-06-multi-agent-orchestration--a-practical-guide", timeline: tl_123 as unknown as Timeline },
+  { id: "week-05-apr-06-multi-agent-orchestration-problems---fixes", timeline: tl_124 as unknown as Timeline },
+  { id: "week-06-apr-13-intelligent-forgetting-in-ai-memory-systems", timeline: tl_125 as unknown as Timeline },
+  { id: "week-06-apr-13-the-role-of-forgetting-in-ai-memory-systems", timeline: tl_126 as unknown as Timeline },
+  { id: "week-07-apr-20-ai-strategy-east-africa---full-video", timeline: tl_127 as unknown as Timeline },
+  { id: "week-07-apr-20-ai-strategy-east-africa---tiktok", timeline: tl_128 as unknown as Timeline },
+  { id: "week-07-apr-20-ai-strategy-east-africa---youtube-short", timeline: tl_129 as unknown as Timeline },
+  { id: "week-07-apr-20-knowledge-graphs---full-video", timeline: tl_130 as unknown as Timeline },
+  { id: "week-07-apr-20-knowledge-graphs---tiktok", timeline: tl_131 as unknown as Timeline },
+  { id: "week-07-apr-20-knowledge-graphs---youtube-short", timeline: tl_132 as unknown as Timeline },
+  { id: "week-07-apr-20-local-first-ai---full-video", timeline: tl_133 as unknown as Timeline },
+  { id: "week-07-apr-20-local-first-ai---tiktok", timeline: tl_134 as unknown as Timeline },
+  { id: "week-07-apr-20-local-first-ai---youtube-short", timeline: tl_135 as unknown as Timeline },
+  { id: "week-08-apr-27-future-of-work---full-video", timeline: tl_136 as unknown as Timeline },
+  { id: "week-08-apr-27-future-of-work---tiktok", timeline: tl_137 as unknown as Timeline },
+  { id: "week-08-apr-27-future-of-work---youtube-short", timeline: tl_138 as unknown as Timeline },
+  { id: "week-08-apr-27-generative-ui---full-video", timeline: tl_139 as unknown as Timeline },
+  { id: "week-08-apr-27-generative-ui---tiktok", timeline: tl_140 as unknown as Timeline },
+  { id: "week-08-apr-27-generative-ui---youtube-short", timeline: tl_141 as unknown as Timeline },
+  { id: "week-08-apr-27-token-budgets---full-video", timeline: tl_142 as unknown as Timeline },
+  { id: "week-08-apr-27-token-budgets---tiktok", timeline: tl_143 as unknown as Timeline },
+  { id: "week-08-apr-27-token-budgets---youtube-short", timeline: tl_144 as unknown as Timeline },
+  { id: "week-09-may-04-ai-competitive-moat---full-video", timeline: tl_145 as unknown as Timeline },
+  { id: "week-09-may-04-ai-competitive-moat---tiktok", timeline: tl_146 as unknown as Timeline },
+  { id: "week-09-may-04-ai-competitive-moat---youtube-short", timeline: tl_147 as unknown as Timeline },
+  { id: "week-09-may-04-ai-financial-services-architecture---full-video", timeline: tl_148 as unknown as Timeline },
+  { id: "week-09-may-04-ai-in-financial-services---tiktok", timeline: tl_149 as unknown as Timeline },
+  { id: "week-09-may-04-ai-in-financial-services---youtube-short", timeline: tl_150 as unknown as Timeline },
+  { id: "week-09-may-04-intelligence-layer-assessment---full-video", timeline: tl_151 as unknown as Timeline },
+  { id: "week-09-may-04-intelligence-layer-assessment---youtube-short", timeline: tl_152 as unknown as Timeline },
+  { id: "week-09-may-04-why-your-ai-initiative-stalled", timeline: tl_153 as unknown as Timeline },
+  { id: "week-10-may-11-100--model-support---full-video", timeline: tl_154 as unknown as Timeline },
+  { id: "week-10-may-11-100--model-support---tiktok", timeline: tl_155 as unknown as Timeline },
+  { id: "week-10-may-11-100--model-support---youtube-short", timeline: tl_156 as unknown as Timeline },
+  { id: "week-10-may-11-agent-augmented-organizations---full-video", timeline: tl_157 as unknown as Timeline },
+  { id: "week-10-may-11-agent-augmented-organizations---tiktok", timeline: tl_158 as unknown as Timeline },
+  { id: "week-10-may-11-agent-augmented-organizations---youtube-short", timeline: tl_159 as unknown as Timeline },
+  { id: "week-10-may-11-department-aware-ai---full-video", timeline: tl_160 as unknown as Timeline },
+  { id: "week-10-may-11-department-aware-ai---tiktok", timeline: tl_161 as unknown as Timeline },
+  { id: "week-10-may-11-department-aware-ai---youtube-short", timeline: tl_162 as unknown as Timeline },
+  { id: "week-11-may-18-air-gapped-ai---full-video", timeline: tl_163 as unknown as Timeline },
+  { id: "week-11-may-18-air-gapped-ai---tiktok", timeline: tl_164 as unknown as Timeline },
+  { id: "week-11-may-18-air-gapped-ai---youtube-short", timeline: tl_165 as unknown as Timeline },
+  { id: "week-11-may-18-consulting-approach---full-video", timeline: tl_166 as unknown as Timeline },
+  { id: "week-11-may-18-consulting-approach---youtube-short", timeline: tl_167 as unknown as Timeline },
+  { id: "week-11-may-18-consulting-approach-to-ai---tiktok", timeline: tl_168 as unknown as Timeline },
+  { id: "week-11-may-18-private-ai---full-video", timeline: tl_169 as unknown as Timeline },
+  { id: "week-11-may-18-private-ai---tiktok", timeline: tl_170 as unknown as Timeline },
+  { id: "week-11-may-18-private-ai---youtube-short", timeline: tl_171 as unknown as Timeline },
+  { id: "week-12-may-25-how-we-use-our-products---full-video", timeline: tl_172 as unknown as Timeline },
+  { id: "week-12-may-25-how-we-use-our-products---tiktok", timeline: tl_173 as unknown as Timeline },
+  { id: "week-12-may-25-how-we-use-our-products---youtube-short", timeline: tl_174 as unknown as Timeline },
+  { id: "week-12-may-25-measuring-ai-roi---full-video", timeline: tl_175 as unknown as Timeline },
+  { id: "week-12-may-25-measuring-ai-roi---tiktok", timeline: tl_176 as unknown as Timeline },
+  { id: "week-12-may-25-measuring-ai-roi---youtube-short", timeline: tl_177 as unknown as Timeline },
+  { id: "week-12-may-25-next-era---full-video", timeline: tl_178 as unknown as Timeline },
+  { id: "week-12-may-25-next-era---youtube-short", timeline: tl_179 as unknown as Timeline },
+  { id: "week-12-may-25-next-era-of-institutional-intelligence---tiktok", timeline: tl_180 as unknown as Timeline }
 ];

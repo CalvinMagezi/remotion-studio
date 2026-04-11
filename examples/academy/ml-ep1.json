@@ -1,0 +1,625 @@
+{
+  "id": "ml-ep1",
+  "title": "Machine Learning — Ep 1: What is ML?",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 900,
+  "backgroundColor": "#061209",
+  "audio": {
+    "src": "music/muted-warning.mp3",
+    "volume": 0.28,
+    "startFrom": 0,
+    "attribution": "\"Muted Warning\" by jaspertine — CC Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://ccmixter.org/files/jaspertine/70612"
+  },
+  "tracks": [
+    {
+      "id": "bg",
+      "label": "Background",
+      "zIndex": 0,
+      "hidden": false
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1,
+      "hidden": false
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay/Badge",
+      "zIndex": 2,
+      "hidden": false
+    }
+  ],
+  "clips": [
+    {
+      "id": "ml1-hook-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0d2410 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ml1-hook-title",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Machine\nLearning\n101",
+        "subtitle": "Teach computers to learn from data",
+        "alignment": "center",
+        "fontSize": 88,
+        "color": "#ffffff",
+        "accentColor": "#e879f9",
+        "eyebrow": "KOLABORATE ACADEMY  ·  01/05",
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ml1-hook-badge",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 5,
+      "durationInFrames": 80,
+      "props": {
+        "text": "EPISODE 01 OF 05 — MACHINE LEARNING",
+        "alignment": "left",
+        "fontSize": 24,
+        "color": "#35b544",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.06
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "ml1-hook-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 10,
+      "durationInFrames": 75,
+      "props": {
+        "name": "kolaborate.africa",
+        "title": "Academy — Free Dev Education",
+        "accentColor": "#35b544",
+        "textColor": "#e1f4e4",
+        "position": "bottom-left"
+      }
+    },
+    {
+      "id": "ml1-t1",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#2a8a34",
+        "direction": "up"
+      }
+    },
+    {
+      "id": "ml1-t2",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 285,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#061209"
+      }
+    },
+    {
+      "id": "ml1-t3",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 480,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#2a8a34",
+        "direction": "left"
+      }
+    },
+    {
+      "id": "ml1-t4",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 690,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#061209"
+      }
+    },
+    {
+      "id": "ml1-s1-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 105,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ml1-s1-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 110,
+      "durationInFrames": 175,
+      "props": {
+        "text": "01 — WHAT IS ML",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#e879f9",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "ml1-s1-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 110,
+      "durationInFrames": 175,
+      "props": {
+        "title": "What is\nMachine\nLearning?",
+        "alignment": "left",
+        "fontSize": 82,
+        "color": "#ffffff",
+        "accentColor": "#e879f9",
+        "layout": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.28
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ml1-s1-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 122,
+      "durationInFrames": 163,
+      "props": {
+        "text": "Machine Learning is programming that improves from experience. Instead of writing rules, you show the computer examples and it finds the patterns. It's statistics plus optimisation at scale.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": {
+          "x": 0.06,
+          "y": 0.44,
+          "width": 0.88,
+          "height": 0.26
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 8,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ml1-s1-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 138,
+      "durationInFrames": 147,
+      "props": {
+        "value": 200,
+        "label": "USD — projected ML market size by 2030, growing 38% per year",
+        "suffix": "B",
+        "color": "#fbdf64",
+        "fontSize": 140,
+        "layout": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.24
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 15
+        }
+      }
+    },
+    {
+      "id": "ml1-s2-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 300,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ml1-s2-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 305,
+      "durationInFrames": 175,
+      "props": {
+        "text": "02 — ML VS TRADITIONAL",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#e879f9",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "ml1-s2-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 305,
+      "durationInFrames": 175,
+      "props": {
+        "title": "ML vs Traditional Code",
+        "alignment": "left",
+        "fontSize": 64,
+        "color": "#ffffff",
+        "accentColor": "#e879f9",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.16
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ml1-s2-chart",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 320,
+      "durationInFrames": 160,
+      "props": {
+        "data": [
+          {
+            "label": "Rules by human",
+            "value": 35,
+            "color": "#94a3b8"
+          },
+          {
+            "label": "Patterns by ML",
+            "value": 95,
+            "color": "#e879f9"
+          },
+          {
+            "label": "Human accuracy",
+            "value": 72,
+            "color": "#94a3b8"
+          },
+          {
+            "label": "ML accuracy",
+            "value": 94,
+            "color": "#e879f9"
+          }
+        ],
+        "title": "Approach Comparison",
+        "horizontal": true,
+        "showValues": true,
+        "barColor": "#e879f9",
+        "layout": {
+          "x": 0.06,
+          "y": 0.22,
+          "width": 0.88,
+          "height": 0.5
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25
+        }
+      }
+    },
+    {
+      "id": "ml1-s2-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 340,
+      "durationInFrames": 140,
+      "props": {
+        "text": "ML finds patterns humans would never think to code explicitly",
+        "position": "bottom",
+        "fontSize": 36,
+        "backgroundColor": "#35b544",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "ml1-s3-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 495,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ml1-s3-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 500,
+      "durationInFrames": 190,
+      "props": {
+        "text": "03 — ML TASK TYPES",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#e879f9",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "ml1-s3-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 500,
+      "durationInFrames": 190,
+      "props": {
+        "title": "What ML\nCan Do",
+        "alignment": "left",
+        "fontSize": 76,
+        "color": "#ffffff",
+        "accentColor": "#e879f9",
+        "layout": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.25
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ml1-s3-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 515,
+      "durationInFrames": 175,
+      "props": {
+        "text": "Classification: is this email spam? Regression: what will this house sell for? Clustering: group these customers. Recommendation: what should this user watch next? ML solves all of these.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": {
+          "x": 0.06,
+          "y": 0.4,
+          "width": 0.88,
+          "height": 0.24
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 8,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ml1-s3-ring",
+      "component": "ProgressRing",
+      "trackId": "content",
+      "from": 530,
+      "durationInFrames": 160,
+      "props": {
+        "percentage": 83,
+        "label": "of ML tasks fall into classification or regression problem types",
+        "size": 260,
+        "strokeWidth": 22,
+        "color": "#e879f9",
+        "trackColor": "#0e2a12",
+        "showPercentage": true,
+        "layout": {
+          "x": 0.25,
+          "y": 0.65,
+          "width": 0.5,
+          "height": 0.3
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "in",
+          "durationInFrames": 40,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ml1-out-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 705,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#0d2410 0%,#1a4a1e 50%,#0d2410 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ml1-out-logo",
+      "component": "LogoAnimation",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 180,
+      "props": {
+        "src": "https://www.kolaborate.africa/_next/image?url=%2Flogo.png&w=384&q=75&dpl=dpl_CiMGbgMpJQsqyT4XvX3L8XWZYgKJ",
+        "size": 160,
+        "springProfile": "bouncy",
+        "layout": {
+          "x": 0.35,
+          "y": 0.08,
+          "width": 0.3,
+          "height": 0.18
+        }
+      }
+    },
+    {
+      "id": "ml1-out-cta",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 720,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Next: Supervised\nvs Unsupervised →",
+        "subtitle": "Follow @kolaborate.africa for the full series",
+        "alignment": "center",
+        "fontSize": 68,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": {
+          "x": 0.06,
+          "y": 0.28,
+          "width": 0.88,
+          "height": 0.45
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ml1-out-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 735,
+      "durationInFrames": 160,
+      "props": {
+        "value": 97,
+        "label": "accuracy achievable by ML models on standard image recognition tasks",
+        "suffix": "%",
+        "color": "#35b544",
+        "fontSize": 110,
+        "layout": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.22
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 10
+        }
+      }
+    },
+    {
+      "id": "ml1-out-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 730,
+      "durationInFrames": 165,
+      "props": {
+        "name": "kolaborate.africa",
+        "title": "Free Dev Education for Africa & Beyond",
+        "accentColor": "#fbdf64",
+        "textColor": "#ffffff",
+        "position": "bottom-left"
+      }
+    }
+  ]
+}

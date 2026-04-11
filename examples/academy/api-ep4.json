@@ -1,0 +1,625 @@
+{
+  "id": "api-ep4",
+  "title": "APIs & REST — Ep 4: Authentication",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 900,
+  "backgroundColor": "#061209",
+  "audio": {
+    "src": "music/muted-warning.mp3",
+    "volume": 0.28,
+    "startFrom": 45,
+    "attribution": "\"Muted Warning\" by jaspertine — CC Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://ccmixter.org/files/jaspertine/70612"
+  },
+  "tracks": [
+    {
+      "id": "bg",
+      "label": "Background",
+      "zIndex": 0,
+      "hidden": false
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1,
+      "hidden": false
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay/Badge",
+      "zIndex": 2,
+      "hidden": false
+    }
+  ],
+  "clips": [
+    {
+      "id": "ar4-hook-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0d2410 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ar4-hook-title",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "API\nAuthentication",
+        "subtitle": "Secure your endpoints the right way",
+        "alignment": "center",
+        "fontSize": 88,
+        "color": "#ffffff",
+        "accentColor": "#3b82f6",
+        "eyebrow": "KOLABORATE ACADEMY  ·  04/05",
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ar4-hook-badge",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 5,
+      "durationInFrames": 80,
+      "props": {
+        "text": "EPISODE 04 OF 05 — APIS & REST",
+        "alignment": "left",
+        "fontSize": 24,
+        "color": "#35b544",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.06
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "ar4-hook-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 10,
+      "durationInFrames": 75,
+      "props": {
+        "name": "kolaborate.africa",
+        "title": "Academy — Free Dev Education",
+        "accentColor": "#35b544",
+        "textColor": "#e1f4e4",
+        "position": "bottom-left"
+      }
+    },
+    {
+      "id": "ar4-t1",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#2a8a34",
+        "direction": "up"
+      }
+    },
+    {
+      "id": "ar4-t2",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 285,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#061209"
+      }
+    },
+    {
+      "id": "ar4-t3",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 480,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#2a8a34",
+        "direction": "left"
+      }
+    },
+    {
+      "id": "ar4-t4",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 690,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#061209"
+      }
+    },
+    {
+      "id": "ar4-s1-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 105,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ar4-s1-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 110,
+      "durationInFrames": 175,
+      "props": {
+        "text": "01 — AUTH BASICS",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#3b82f6",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "ar4-s1-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 110,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Who Are\nYou?",
+        "alignment": "left",
+        "fontSize": 82,
+        "color": "#ffffff",
+        "accentColor": "#3b82f6",
+        "layout": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.28
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ar4-s1-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 122,
+      "durationInFrames": 163,
+      "props": {
+        "text": "API authentication proves identity. Without it, anyone can call your endpoints and read or modify your data. Always authenticate — and always authorise per-resource as well.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": {
+          "x": 0.06,
+          "y": 0.44,
+          "width": 0.88,
+          "height": 0.26
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 8,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ar4-s1-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 138,
+      "durationInFrames": 147,
+      "props": {
+        "value": 73,
+        "label": "of modern APIs use JWT tokens for stateless authentication",
+        "suffix": "%",
+        "color": "#fbdf64",
+        "fontSize": 140,
+        "layout": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.24
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 15
+        }
+      }
+    },
+    {
+      "id": "ar4-s2-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 300,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ar4-s2-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 305,
+      "durationInFrames": 175,
+      "props": {
+        "text": "02 — AUTH METHODS",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#3b82f6",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "ar4-s2-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 305,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Authentication Methods",
+        "alignment": "left",
+        "fontSize": 64,
+        "color": "#ffffff",
+        "accentColor": "#3b82f6",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.16
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ar4-s2-chart",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 320,
+      "durationInFrames": 160,
+      "props": {
+        "data": [
+          {
+            "label": "JWT",
+            "value": 73,
+            "color": "#3b82f6"
+          },
+          {
+            "label": "API Keys",
+            "value": 61,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "OAuth 2.0",
+            "value": 48,
+            "color": "#8b5cf6"
+          },
+          {
+            "label": "Session cookies",
+            "value": 22,
+            "color": "#94a3b8"
+          }
+        ],
+        "title": "Auth Method Adoption",
+        "horizontal": true,
+        "showValues": true,
+        "barColor": "#3b82f6",
+        "layout": {
+          "x": 0.06,
+          "y": 0.22,
+          "width": 0.88,
+          "height": 0.5
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25
+        }
+      }
+    },
+    {
+      "id": "ar4-s2-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 340,
+      "durationInFrames": 140,
+      "props": {
+        "text": "JWT + OAuth is the gold standard combination for production APIs",
+        "position": "bottom",
+        "fontSize": 36,
+        "backgroundColor": "#35b544",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "ar4-s3-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 495,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ar4-s3-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 500,
+      "durationInFrames": 190,
+      "props": {
+        "text": "03 — SECURE BY DEFAULT",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#3b82f6",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "ar4-s3-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 500,
+      "durationInFrames": 190,
+      "props": {
+        "title": "Secure by\nDefault",
+        "alignment": "left",
+        "fontSize": 76,
+        "color": "#ffffff",
+        "accentColor": "#3b82f6",
+        "layout": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.25
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ar4-s3-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 515,
+      "durationInFrames": 175,
+      "props": {
+        "text": "Always use HTTPS. Rotate API keys regularly. Use short JWT expiry (15 min access, 7 day refresh). Log authentication failures. Rate-limit every endpoint. Security is not optional.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": {
+          "x": 0.06,
+          "y": 0.4,
+          "width": 0.88,
+          "height": 0.24
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 8,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ar4-s3-ring",
+      "component": "ProgressRing",
+      "trackId": "content",
+      "from": 530,
+      "durationInFrames": 160,
+      "props": {
+        "percentage": 88,
+        "label": "of API breaches are preventable with basic auth practices",
+        "size": 260,
+        "strokeWidth": 22,
+        "color": "#3b82f6",
+        "trackColor": "#0e2a12",
+        "showPercentage": true,
+        "layout": {
+          "x": 0.25,
+          "y": 0.65,
+          "width": 0.5,
+          "height": 0.3
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "in",
+          "durationInFrames": 40,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ar4-out-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 705,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#0d2410 0%,#1a4a1e 50%,#0d2410 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "ar4-out-logo",
+      "component": "LogoAnimation",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 180,
+      "props": {
+        "src": "https://www.kolaborate.africa/_next/image?url=%2Flogo.png&w=384&q=75&dpl=dpl_CiMGbgMpJQsqyT4XvX3L8XWZYgKJ",
+        "size": 160,
+        "springProfile": "bouncy",
+        "layout": {
+          "x": 0.35,
+          "y": 0.08,
+          "width": 0.3,
+          "height": 0.18
+        }
+      }
+    },
+    {
+      "id": "ar4-out-cta",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 720,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Next: API\nBest Practices →",
+        "subtitle": "Follow @kolaborate.africa for the full series",
+        "alignment": "center",
+        "fontSize": 68,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": {
+          "x": 0.06,
+          "y": 0.28,
+          "width": 0.88,
+          "height": 0.45
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "ar4-out-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 735,
+      "durationInFrames": 160,
+      "props": {
+        "value": 99,
+        "label": "of APIs should always be served exclusively over HTTPS",
+        "suffix": "%",
+        "color": "#35b544",
+        "fontSize": 110,
+        "layout": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.22
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 10
+        }
+      }
+    },
+    {
+      "id": "ar4-out-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 730,
+      "durationInFrames": 165,
+      "props": {
+        "name": "kolaborate.africa",
+        "title": "Free Dev Education for Africa & Beyond",
+        "accentColor": "#fbdf64",
+        "textColor": "#ffffff",
+        "position": "bottom-left"
+      }
+    }
+  ]
+}

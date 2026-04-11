@@ -1,0 +1,625 @@
+{
+  "id": "db-ep5",
+  "title": "Databases — Ep 5: Choosing the Right DB",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 900,
+  "backgroundColor": "#061209",
+  "audio": {
+    "src": "music/muted-warning.mp3",
+    "volume": 0.28,
+    "startFrom": 60,
+    "attribution": "\"Muted Warning\" by jaspertine — CC Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://ccmixter.org/files/jaspertine/70612"
+  },
+  "tracks": [
+    {
+      "id": "bg",
+      "label": "Background",
+      "zIndex": 0,
+      "hidden": false
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1,
+      "hidden": false
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay/Badge",
+      "zIndex": 2,
+      "hidden": false
+    }
+  ],
+  "clips": [
+    {
+      "id": "db5-hook-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0d2410 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "db5-hook-title",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Choose Your\nDatabase",
+        "subtitle": "The decision that shapes your entire backend",
+        "alignment": "center",
+        "fontSize": 88,
+        "color": "#ffffff",
+        "accentColor": "#f59e0b",
+        "eyebrow": "KOLABORATE ACADEMY  ·  05/05",
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "db5-hook-badge",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 5,
+      "durationInFrames": 80,
+      "props": {
+        "text": "EPISODE 05 OF 05 — DATABASES",
+        "alignment": "left",
+        "fontSize": 24,
+        "color": "#35b544",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.06
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "db5-hook-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 10,
+      "durationInFrames": 75,
+      "props": {
+        "name": "kolaborate.africa",
+        "title": "Academy — Free Dev Education",
+        "accentColor": "#35b544",
+        "textColor": "#e1f4e4",
+        "position": "bottom-left"
+      }
+    },
+    {
+      "id": "db5-t1",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#2a8a34",
+        "direction": "up"
+      }
+    },
+    {
+      "id": "db5-t2",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 285,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#061209"
+      }
+    },
+    {
+      "id": "db5-t3",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 480,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#2a8a34",
+        "direction": "left"
+      }
+    },
+    {
+      "id": "db5-t4",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 690,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#061209"
+      }
+    },
+    {
+      "id": "db5-s1-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 105,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "db5-s1-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 110,
+      "durationInFrames": 175,
+      "props": {
+        "text": "01 — DECISION FRAMEWORK",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#f59e0b",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "db5-s1-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 110,
+      "durationInFrames": 175,
+      "props": {
+        "title": "The Database\nDecision",
+        "alignment": "left",
+        "fontSize": 82,
+        "color": "#ffffff",
+        "accentColor": "#f59e0b",
+        "layout": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.28
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "db5-s1-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 122,
+      "durationInFrames": 163,
+      "props": {
+        "text": "Ask three questions: Is my data relational? → SQL. Do I need flexible schema at massive scale? → NoSQL. Do I need sub-millisecond reads? → Redis. For most apps: just use PostgreSQL.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": {
+          "x": 0.06,
+          "y": 0.44,
+          "width": 0.88,
+          "height": 0.26
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 8,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "db5-s1-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 138,
+      "durationInFrames": 147,
+      "props": {
+        "value": 40,
+        "label": "of developers pick the wrong database on their first project",
+        "suffix": "%",
+        "color": "#fbdf64",
+        "fontSize": 140,
+        "layout": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.24
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 15
+        }
+      }
+    },
+    {
+      "id": "db5-s2-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 300,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "db5-s2-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 305,
+      "durationInFrames": 175,
+      "props": {
+        "text": "02 — USE CASES",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#f59e0b",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "db5-s2-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 305,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Database Use Cases",
+        "alignment": "left",
+        "fontSize": 64,
+        "color": "#ffffff",
+        "accentColor": "#f59e0b",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.16
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "db5-s2-chart",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 320,
+      "durationInFrames": 160,
+      "props": {
+        "data": [
+          {
+            "label": "PostgreSQL: OLTP",
+            "value": 88,
+            "color": "#f59e0b"
+          },
+          {
+            "label": "Redis: Caching",
+            "value": 79,
+            "color": "#ef4444"
+          },
+          {
+            "label": "MongoDB: Documents",
+            "value": 67,
+            "color": "#22c55e"
+          },
+          {
+            "label": "Elasticsearch: Search",
+            "value": 48,
+            "color": "#3b82f6"
+          }
+        ],
+        "title": "DB Use Case Fit Score",
+        "horizontal": true,
+        "showValues": true,
+        "barColor": "#f59e0b",
+        "layout": {
+          "x": 0.06,
+          "y": 0.22,
+          "width": 0.88,
+          "height": 0.5
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25
+        }
+      }
+    },
+    {
+      "id": "db5-s2-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 340,
+      "durationInFrames": 140,
+      "props": {
+        "text": "Polyglot persistence — use the right database for each specific job",
+        "position": "bottom",
+        "fontSize": 36,
+        "backgroundColor": "#35b544",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "db5-s3-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 495,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "db5-s3-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 500,
+      "durationInFrames": 190,
+      "props": {
+        "text": "03 — MIGRATION PATH",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#f59e0b",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "db5-s3-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 500,
+      "durationInFrames": 190,
+      "props": {
+        "title": "Plan for\nMigration",
+        "alignment": "left",
+        "fontSize": 76,
+        "color": "#ffffff",
+        "accentColor": "#f59e0b",
+        "layout": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.25
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "db5-s3-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 515,
+      "durationInFrames": 175,
+      "props": {
+        "text": "Start with PostgreSQL. Add Redis when you need caching. Add Elasticsearch when full-text search becomes a bottleneck. Never try to force one database to do everything well.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": {
+          "x": 0.06,
+          "y": 0.4,
+          "width": 0.88,
+          "height": 0.24
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 8,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "db5-s3-ring",
+      "component": "ProgressRing",
+      "trackId": "content",
+      "from": 530,
+      "durationInFrames": 160,
+      "props": {
+        "percentage": 92,
+        "label": "of successful startups started with PostgreSQL and scaled successfully",
+        "size": 260,
+        "strokeWidth": 22,
+        "color": "#f59e0b",
+        "trackColor": "#0e2a12",
+        "showPercentage": true,
+        "layout": {
+          "x": 0.25,
+          "y": 0.65,
+          "width": 0.5,
+          "height": 0.3
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "in",
+          "durationInFrames": 40,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "db5-out-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 705,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#0d2410 0%,#1a4a1e 50%,#0d2410 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "db5-out-logo",
+      "component": "LogoAnimation",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 180,
+      "props": {
+        "src": "https://www.kolaborate.africa/_next/image?url=%2Flogo.png&w=384&q=75&dpl=dpl_CiMGbgMpJQsqyT4XvX3L8XWZYgKJ",
+        "size": 160,
+        "springProfile": "bouncy",
+        "layout": {
+          "x": 0.35,
+          "y": 0.08,
+          "width": 0.3,
+          "height": 0.18
+        }
+      }
+    },
+    {
+      "id": "db5-out-cta",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 720,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Series Complete!\nNext: Docker →",
+        "subtitle": "Follow @kolaborate.africa for the full series",
+        "alignment": "center",
+        "fontSize": 68,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": {
+          "x": 0.06,
+          "y": 0.28,
+          "width": 0.88,
+          "height": 0.45
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "db5-out-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 735,
+      "durationInFrames": 160,
+      "props": {
+        "value": 10,
+        "label": "to set up PostgreSQL locally with Docker Compose — start today",
+        "suffix": "min",
+        "color": "#35b544",
+        "fontSize": 110,
+        "layout": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.22
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 10
+        }
+      }
+    },
+    {
+      "id": "db5-out-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 730,
+      "durationInFrames": 165,
+      "props": {
+        "name": "kolaborate.africa",
+        "title": "Free Dev Education for Africa & Beyond",
+        "accentColor": "#fbdf64",
+        "textColor": "#ffffff",
+        "position": "bottom-left"
+      }
+    }
+  ]
+}

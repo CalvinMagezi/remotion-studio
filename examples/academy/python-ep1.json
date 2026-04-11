@@ -1,0 +1,630 @@
+{
+  "id": "python-ep1",
+  "title": "Python for Developers — Ep 1: Python Basics",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 900,
+  "backgroundColor": "#061209",
+  "audio": {
+    "src": "music/muted-warning.mp3",
+    "volume": 0.28,
+    "startFrom": 0,
+    "attribution": "\"Muted Warning\" by jaspertine — CC Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://ccmixter.org/files/jaspertine/70612"
+  },
+  "tracks": [
+    {
+      "id": "bg",
+      "label": "Background",
+      "zIndex": 0,
+      "hidden": false
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1,
+      "hidden": false
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay/Badge",
+      "zIndex": 2,
+      "hidden": false
+    }
+  ],
+  "clips": [
+    {
+      "id": "py1-hook-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0d2410 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "py1-hook-title",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "Python for\nDevelopers",
+        "subtitle": "The most readable language in the world",
+        "alignment": "center",
+        "fontSize": 88,
+        "color": "#ffffff",
+        "accentColor": "#facc15",
+        "eyebrow": "KOLABORATE ACADEMY  ·  01/05",
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "py1-hook-badge",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 5,
+      "durationInFrames": 80,
+      "props": {
+        "text": "EPISODE 01 OF 05 — PYTHON FOR DEVELOPERS",
+        "alignment": "left",
+        "fontSize": 24,
+        "color": "#35b544",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.06
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "py1-hook-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 10,
+      "durationInFrames": 75,
+      "props": {
+        "name": "kolaborate.africa",
+        "title": "Academy — Free Dev Education",
+        "accentColor": "#35b544",
+        "textColor": "#e1f4e4",
+        "position": "bottom-left"
+      }
+    },
+    {
+      "id": "py1-t1",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#2a8a34",
+        "direction": "up"
+      }
+    },
+    {
+      "id": "py1-t2",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 285,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#061209"
+      }
+    },
+    {
+      "id": "py1-t3",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 480,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#2a8a34",
+        "direction": "left"
+      }
+    },
+    {
+      "id": "py1-t4",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 690,
+      "durationInFrames": 15,
+      "props": {
+        "durationInFrames": 15,
+        "color": "#061209"
+      }
+    },
+    {
+      "id": "py1-s1-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 105,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "py1-s1-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 110,
+      "durationInFrames": 175,
+      "props": {
+        "text": "01 — WHY PYTHON",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#facc15",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "py1-s1-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 110,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Why Python\n#1?",
+        "alignment": "left",
+        "fontSize": 82,
+        "color": "#ffffff",
+        "accentColor": "#facc15",
+        "layout": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.28
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "py1-s1-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 122,
+      "durationInFrames": 163,
+      "props": {
+        "text": "Python has been the world's most popular programming language for 5 consecutive years. Beginner-friendly syntax, a massive library ecosystem, and applications from web to AI to data science.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": {
+          "x": 0.06,
+          "y": 0.44,
+          "width": 0.88,
+          "height": 0.26
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 8,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "py1-s1-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 138,
+      "durationInFrames": 147,
+      "props": {
+        "value": 1,
+        "label": "most popular programming language globally for 5 years running",
+        "suffix": "st",
+        "color": "#fbdf64",
+        "fontSize": 140,
+        "layout": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.24
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 15
+        }
+      }
+    },
+    {
+      "id": "py1-s2-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 300,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "py1-s2-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 305,
+      "durationInFrames": 175,
+      "props": {
+        "text": "02 — LANGUAGE POPULARITY",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#facc15",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "py1-s2-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 305,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Language Popularity 2024",
+        "alignment": "left",
+        "fontSize": 64,
+        "color": "#ffffff",
+        "accentColor": "#facc15",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.16
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "py1-s2-chart",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 320,
+      "durationInFrames": 160,
+      "props": {
+        "data": [
+          {
+            "label": "Python",
+            "value": 28,
+            "color": "#facc15"
+          },
+          {
+            "label": "JavaScript",
+            "value": 24,
+            "color": "#f97316"
+          },
+          {
+            "label": "Java",
+            "value": 18,
+            "color": "#3b82f6"
+          },
+          {
+            "label": "TypeScript",
+            "value": 14,
+            "color": "#3178c6"
+          },
+          {
+            "label": "C#",
+            "value": 9,
+            "color": "#8b5cf6"
+          }
+        ],
+        "title": "Usage Share %",
+        "horizontal": true,
+        "showValues": true,
+        "barColor": "#facc15",
+        "layout": {
+          "x": 0.06,
+          "y": 0.22,
+          "width": 0.88,
+          "height": 0.5
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25
+        }
+      }
+    },
+    {
+      "id": "py1-s2-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 340,
+      "durationInFrames": 140,
+      "props": {
+        "text": "Python leads by 4% — and the gap keeps growing every single year",
+        "position": "bottom",
+        "fontSize": 36,
+        "backgroundColor": "#35b544",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "py1-s3-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 495,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "py1-s3-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 500,
+      "durationInFrames": 190,
+      "props": {
+        "text": "03 — READABILITY",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#facc15",
+        "layout": {
+          "x": 0.06,
+          "y": 0.04,
+          "width": 0.88,
+          "height": 0.07
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "down",
+          "durationInFrames": 15,
+          "springProfile": "snappy"
+        }
+      }
+    },
+    {
+      "id": "py1-s3-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 500,
+      "durationInFrames": 190,
+      "props": {
+        "title": "Code That\nReads Like\nEnglish",
+        "alignment": "left",
+        "fontSize": 76,
+        "color": "#ffffff",
+        "accentColor": "#facc15",
+        "layout": {
+          "x": 0.06,
+          "y": 0.12,
+          "width": 0.88,
+          "height": 0.25
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "py1-s3-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 515,
+      "durationInFrames": 175,
+      "props": {
+        "text": "Python's design philosophy: one obvious way to do anything. Indentation enforces structure. No braces, no semicolons. A Python script reads almost like pseudocode — focus on problems, not syntax.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": {
+          "x": 0.06,
+          "y": 0.4,
+          "width": 0.88,
+          "height": 0.24
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 8,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "py1-s3-ring",
+      "component": "ProgressRing",
+      "trackId": "content",
+      "from": 530,
+      "durationInFrames": 160,
+      "props": {
+        "percentage": 90,
+        "label": "of developers say Python is the most readable language they've ever used",
+        "size": 260,
+        "strokeWidth": 22,
+        "color": "#facc15",
+        "trackColor": "#0e2a12",
+        "showPercentage": true,
+        "layout": {
+          "x": 0.25,
+          "y": 0.65,
+          "width": 0.5,
+          "height": 0.3
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "in",
+          "durationInFrames": 40,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "py1-out-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 705,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#0d2410 0%,#1a4a1e 50%,#0d2410 100%)",
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        }
+      }
+    },
+    {
+      "id": "py1-out-logo",
+      "component": "LogoAnimation",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 180,
+      "props": {
+        "src": "https://www.kolaborate.africa/_next/image?url=%2Flogo.png&w=384&q=75&dpl=dpl_CiMGbgMpJQsqyT4XvX3L8XWZYgKJ",
+        "size": 160,
+        "springProfile": "bouncy",
+        "layout": {
+          "x": 0.35,
+          "y": 0.08,
+          "width": 0.3,
+          "height": 0.18
+        }
+      }
+    },
+    {
+      "id": "py1-out-cta",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 720,
+      "durationInFrames": 175,
+      "props": {
+        "title": "Next: Functions\n& OOP →",
+        "subtitle": "Follow @kolaborate.africa for the full series",
+        "alignment": "center",
+        "fontSize": 68,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": {
+          "x": 0.06,
+          "y": 0.28,
+          "width": 0.88,
+          "height": 0.45
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "gentle"
+        }
+      }
+    },
+    {
+      "id": "py1-out-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 735,
+      "durationInFrames": 160,
+      "props": {
+        "value": 300,
+        "label": "Python packages on PyPI — there's a library for everything",
+        "suffix": "K+",
+        "color": "#35b544",
+        "fontSize": 110,
+        "layout": {
+          "x": 0.06,
+          "y": 0.72,
+          "width": 0.88,
+          "height": 0.22
+        },
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "delay": 10
+        }
+      }
+    },
+    {
+      "id": "py1-out-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 730,
+      "durationInFrames": 165,
+      "props": {
+        "name": "kolaborate.africa",
+        "title": "Free Dev Education for Africa & Beyond",
+        "accentColor": "#fbdf64",
+        "textColor": "#ffffff",
+        "position": "bottom-left"
+      }
+    }
+  ]
+}
