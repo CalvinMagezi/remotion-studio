@@ -1,0 +1,717 @@
+{
+  "id": "NextjsApiReelV1",
+  "title": "RESTful APIs the Next.js Way — Premium Reel",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1200,
+  "backgroundColor": "#060611",
+  "tracks": [
+    {
+      "id": "bg",
+      "label": "Background",
+      "zIndex": 0,
+      "hidden": false
+    },
+    {
+      "id": "content",
+      "label": "Content",
+      "zIndex": 1,
+      "hidden": false
+    },
+    {
+      "id": "overlay",
+      "label": "Overlay/Badge",
+      "zIndex": 2,
+      "hidden": false
+    }
+  ],
+  "clips": [
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        },
+        "backgroundColor": "linear-gradient(160deg, #1a0805 0%, #0f0613 40%, #060611 100%)",
+        "title": " ",
+        "alignment": "center"
+      },
+      "id": "hook-bg",
+      "trackId": "bg",
+      "from": 0,
+      "durationInFrames": 90
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 25,
+          "springProfile": "cinematic"
+        },
+        "layout": {
+          "x": 0.05,
+          "y": 0.26,
+          "width": 0.9,
+          "height": 0.48
+        },
+        "eyebrow": "Next.js 14 · App Router",
+        "accentColor": "#f97316",
+        "title": "RESTful APIs\nThe Next.js Way",
+        "subtitle": "Building & Consuming Scalable Endpoints",
+        "alignment": "center",
+        "color": "#fef3c7"
+      },
+      "id": "hook-title",
+      "trackId": "content",
+      "from": 6,
+      "durationInFrames": 84
+    },
+    {
+      "component": "SlideTransition",
+      "props": {
+        "durationInFrames": 15,
+        "color": "#060611",
+        "direction": "left"
+      },
+      "id": "api-t0",
+      "trackId": "bg",
+      "from": 90,
+      "durationInFrames": 15
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        },
+        "backgroundColor": "linear-gradient(180deg, #0a1628 0%, #091222 50%, #060e1a 100%)",
+        "title": " ",
+        "alignment": "center"
+      },
+      "id": "api-s1-bg",
+      "trackId": "bg",
+      "from": 105,
+      "durationInFrames": 210
+    },
+    {
+      "component": "LowerThird",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "left",
+          "durationInFrames": 15
+        },
+        "layout": {
+          "x": 0,
+          "y": 0.03,
+          "width": 1,
+          "height": 0.12
+        },
+        "accentColor": "#3b82f6",
+        "name": "Concept 1 / 4",
+        "title": "Route Handlers",
+        "position": "top-left"
+      },
+      "id": "api-s1-badge",
+      "trackId": "overlay",
+      "from": 110,
+      "durationInFrames": 195
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 22,
+          "springProfile": "gentle"
+        },
+        "layout": {
+          "x": 0.06,
+          "y": 0.14,
+          "width": 0.88,
+          "height": 0.22
+        },
+        "accentColor": "#3b82f6",
+        "title": "app/api/ is\nall you need",
+        "subtitle": "GET, POST, DELETE — one file, one export per HTTP method",
+        "alignment": "left",
+        "fontSize": 72,
+        "color": "#eff6ff"
+      },
+      "id": "api-s1-title",
+      "trackId": "content",
+      "from": 115,
+      "durationInFrames": 200
+    },
+    {
+      "component": "CodeBlock",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        },
+        "layout": {
+          "x": 0.04,
+          "y": 0.37,
+          "width": 0.92,
+          "height": 0.36
+        },
+        "accentColor": "#3b82f6",
+        "code": "import { NextRequest, NextResponse } from \"next/server\"\nimport { db } from \"@/lib/db\"\n\nexport async function GET(req: NextRequest) {\n  const users = await db.user.findMany({\n    select: { id: true, name: true },\n  })\n  return NextResponse.json(users)\n}\n\nexport async function POST(req: NextRequest) {\n  const body = await req.json()\n  const user = await db.user.create({ data: body })\n  return NextResponse.json(user, { status: 201 })\n}",
+        "language": "ts",
+        "filename": "app/api/users/route.ts",
+        "highlightLines": [
+          4,
+          11
+        ],
+        "showWindowChrome": true,
+        "animationStyle": "cascade"
+      },
+      "id": "api-s1-code",
+      "trackId": "content",
+      "from": 130,
+      "durationInFrames": 185
+    },
+    {
+      "component": "StatCounter",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 30,
+          "springProfile": "bouncy"
+        },
+        "layout": {
+          "x": 0.1,
+          "y": 0.74,
+          "width": 0.8,
+          "height": 0.2
+        },
+        "accentColor": "#3b82f6",
+        "value": 201,
+        "label": "HTTP status on resource create",
+        "suffix": "",
+        "color": "#3b82f6",
+        "decimals": 0
+      },
+      "id": "api-s1-stat",
+      "trackId": "content",
+      "from": 160,
+      "durationInFrames": 155
+    },
+    {
+      "component": "SlideTransition",
+      "props": {
+        "durationInFrames": 15,
+        "color": "#060611",
+        "direction": "left"
+      },
+      "id": "api-t1",
+      "trackId": "bg",
+      "from": 315,
+      "durationInFrames": 15
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        },
+        "backgroundColor": "linear-gradient(180deg, #150d2e 0%, #110a26 50%, #0a061a 100%)",
+        "title": " ",
+        "alignment": "center"
+      },
+      "id": "api-s2-bg",
+      "trackId": "bg",
+      "from": 330,
+      "durationInFrames": 210
+    },
+    {
+      "component": "LowerThird",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "left",
+          "durationInFrames": 15
+        },
+        "layout": {
+          "x": 0,
+          "y": 0.03,
+          "width": 1,
+          "height": 0.12
+        },
+        "accentColor": "#a78bfa",
+        "name": "Concept 2 / 4",
+        "title": "Dynamic Routes",
+        "position": "top-left"
+      },
+      "id": "api-s2-badge",
+      "trackId": "overlay",
+      "from": 335,
+      "durationInFrames": 200
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 22,
+          "springProfile": "gentle"
+        },
+        "layout": {
+          "x": 0.06,
+          "y": 0.14,
+          "width": 0.88,
+          "height": 0.22
+        },
+        "accentColor": "#a78bfa",
+        "title": "[id] routes with\ntype-safe params",
+        "subtitle": "Segment params flow into your handler — plus 404 in one return",
+        "alignment": "left",
+        "fontSize": 68,
+        "color": "#f5f3ff"
+      },
+      "id": "api-s2-title",
+      "trackId": "content",
+      "from": 340,
+      "durationInFrames": 195
+    },
+    {
+      "component": "CodeBlock",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        },
+        "layout": {
+          "x": 0.04,
+          "y": 0.37,
+          "width": 0.92,
+          "height": 0.38
+        },
+        "accentColor": "#a78bfa",
+        "code": "import { NextRequest, NextResponse } from \"next/server\"\nimport { db } from \"@/lib/db\"\n\nexport async function GET(\n  _req: NextRequest,\n  { params }: { params: { id: string } }\n) {\n  const user = await db.user.findUnique({\n    where: { id: params.id },\n  })\n  if (!user) {\n    return NextResponse.json(\n      { error: \"Not found\" }, { status: 404 }\n    )\n  }\n  return NextResponse.json(user)\n}",
+        "language": "ts",
+        "filename": "app/api/users/[id]/route.ts",
+        "highlightLines": [
+          4,
+          5,
+          6,
+          11,
+          12,
+          13
+        ],
+        "showWindowChrome": true,
+        "animationStyle": "cascade"
+      },
+      "id": "api-s2-code",
+      "trackId": "content",
+      "from": 355,
+      "durationInFrames": 180
+    },
+    {
+      "component": "StatCounter",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 30,
+          "springProfile": "bouncy"
+        },
+        "layout": {
+          "x": 0.1,
+          "y": 0.76,
+          "width": 0.8,
+          "height": 0.2
+        },
+        "accentColor": "#a78bfa",
+        "value": 404,
+        "label": "handled gracefully",
+        "suffix": "",
+        "color": "#a78bfa",
+        "decimals": 0
+      },
+      "id": "api-s2-stat",
+      "trackId": "content",
+      "from": 390,
+      "durationInFrames": 145
+    },
+    {
+      "component": "SlideTransition",
+      "props": {
+        "durationInFrames": 15,
+        "color": "#060611",
+        "direction": "left"
+      },
+      "id": "api-t2",
+      "trackId": "bg",
+      "from": 540,
+      "durationInFrames": 15
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        },
+        "backgroundColor": "linear-gradient(180deg, #1c0a10 0%, #160810 50%, #0d060a 100%)",
+        "title": " ",
+        "alignment": "center"
+      },
+      "id": "api-s3-bg",
+      "trackId": "bg",
+      "from": 555,
+      "durationInFrames": 210
+    },
+    {
+      "component": "LowerThird",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "left",
+          "durationInFrames": 15
+        },
+        "layout": {
+          "x": 0,
+          "y": 0.03,
+          "width": 1,
+          "height": 0.12
+        },
+        "accentColor": "#f43f5e",
+        "name": "Concept 3 / 4",
+        "title": "Middleware & Auth",
+        "position": "top-left"
+      },
+      "id": "api-s3-badge",
+      "trackId": "overlay",
+      "from": 560,
+      "durationInFrames": 200
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 22,
+          "springProfile": "gentle"
+        },
+        "layout": {
+          "x": 0.06,
+          "y": 0.14,
+          "width": 0.88,
+          "height": 0.22
+        },
+        "accentColor": "#f43f5e",
+        "title": "One file,\nevery route secured",
+        "subtitle": "middleware.ts intercepts before your handler even runs",
+        "alignment": "left",
+        "fontSize": 68,
+        "color": "#fff1f2"
+      },
+      "id": "api-s3-title",
+      "trackId": "content",
+      "from": 565,
+      "durationInFrames": 195
+    },
+    {
+      "component": "CodeBlock",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        },
+        "layout": {
+          "x": 0.04,
+          "y": 0.37,
+          "width": 0.92,
+          "height": 0.37
+        },
+        "accentColor": "#f43f5e",
+        "code": "import { NextRequest, NextResponse } from \"next/server\"\n\nexport function middleware(req: NextRequest) {\n  const auth = req.headers.get(\"Authorization\")\n  if (!auth?.startsWith(\"Bearer \")) {\n    return NextResponse.json(\n      { error: \"Unauthorized\" },\n      { status: 401 }\n    )\n  }\n  return NextResponse.next()\n}\n\nexport const config = {\n  matcher: [\"/api/:path*\"],\n}",
+        "language": "ts",
+        "filename": "middleware.ts",
+        "highlightLines": [
+          3,
+          4,
+          5,
+          14,
+          15
+        ],
+        "showWindowChrome": true,
+        "animationStyle": "cascade"
+      },
+      "id": "api-s3-code",
+      "trackId": "content",
+      "from": 580,
+      "durationInFrames": 185
+    },
+    {
+      "component": "StatCounter",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 30,
+          "springProfile": "bouncy"
+        },
+        "layout": {
+          "x": 0.1,
+          "y": 0.75,
+          "width": 0.8,
+          "height": 0.2
+        },
+        "accentColor": "#f43f5e",
+        "value": 1,
+        "label": "file secures all /api routes",
+        "suffix": "",
+        "color": "#f43f5e",
+        "decimals": 0
+      },
+      "id": "api-s3-stat",
+      "trackId": "content",
+      "from": 615,
+      "durationInFrames": 150
+    },
+    {
+      "component": "SlideTransition",
+      "props": {
+        "durationInFrames": 15,
+        "color": "#060611",
+        "direction": "left"
+      },
+      "id": "api-t3",
+      "trackId": "bg",
+      "from": 765,
+      "durationInFrames": 15
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        },
+        "backgroundColor": "linear-gradient(180deg, #071c14 0%, #061510 50%, #040e0a 100%)",
+        "title": " ",
+        "alignment": "center"
+      },
+      "id": "api-s4-bg",
+      "trackId": "bg",
+      "from": 780,
+      "durationInFrames": 210
+    },
+    {
+      "component": "LowerThird",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "left",
+          "durationInFrames": 15
+        },
+        "layout": {
+          "x": 0,
+          "y": 0.03,
+          "width": 1,
+          "height": 0.12
+        },
+        "accentColor": "#34d399",
+        "name": "Concept 4 / 4",
+        "title": "Consuming Your API",
+        "position": "top-left"
+      },
+      "id": "api-s4-badge",
+      "trackId": "overlay",
+      "from": 785,
+      "durationInFrames": 200
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 22,
+          "springProfile": "gentle"
+        },
+        "layout": {
+          "x": 0.06,
+          "y": 0.14,
+          "width": 0.88,
+          "height": 0.22
+        },
+        "accentColor": "#34d399",
+        "title": "Fetch with\nbuilt-in caching",
+        "subtitle": "Server Components call your own API with ISR-style revalidation",
+        "alignment": "left",
+        "fontSize": 72,
+        "color": "#ecfdf5"
+      },
+      "id": "api-s4-title",
+      "trackId": "content",
+      "from": 790,
+      "durationInFrames": 195
+    },
+    {
+      "component": "CodeBlock",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 20,
+          "springProfile": "gentle"
+        },
+        "layout": {
+          "x": 0.04,
+          "y": 0.37,
+          "width": 0.92,
+          "height": 0.37
+        },
+        "accentColor": "#34d399",
+        "code": "async function UserList() {\n  const res = await fetch(\"/api/users\", {\n    next: { revalidate: 60 },\n  })\n  if (!res.ok) throw new Error(\"Fetch failed\")\n\n  const users: User[] = await res.json()\n\n  return (\n    <ul className=\"space-y-2\">\n      {users.map(user => (\n        <li key={user.id}>{user.name}</li>\n      ))}\n    </ul>\n  )\n}",
+        "language": "tsx",
+        "filename": "app/users/page.tsx",
+        "highlightLines": [
+          2,
+          3
+        ],
+        "showWindowChrome": true,
+        "animationStyle": "cascade"
+      },
+      "id": "api-s4-code",
+      "trackId": "content",
+      "from": 805,
+      "durationInFrames": 185
+    },
+    {
+      "component": "StatCounter",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 30,
+          "springProfile": "bouncy"
+        },
+        "layout": {
+          "x": 0.1,
+          "y": 0.75,
+          "width": 0.8,
+          "height": 0.2
+        },
+        "accentColor": "#34d399",
+        "value": 60,
+        "label": "second cache revalidation",
+        "suffix": "s",
+        "color": "#34d399",
+        "decimals": 0
+      },
+      "id": "api-s4-stat",
+      "trackId": "content",
+      "from": 840,
+      "durationInFrames": 150
+    },
+    {
+      "component": "FadeTransition",
+      "props": {
+        "durationInFrames": 15,
+        "color": "#060611"
+      },
+      "id": "api-t4",
+      "trackId": "bg",
+      "from": 990,
+      "durationInFrames": 15
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "none",
+          "direction": "none"
+        },
+        "backgroundColor": "linear-gradient(160deg, #0a0812 0%, #0d0a1a 50%, #060611 100%)",
+        "title": " ",
+        "alignment": "center"
+      },
+      "id": "api-outro-bg",
+      "trackId": "bg",
+      "from": 1005,
+      "durationInFrames": 195
+    },
+    {
+      "component": "TitleCard",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 30,
+          "springProfile": "cinematic"
+        },
+        "layout": {
+          "x": 0.05,
+          "y": 0.26,
+          "width": 0.9,
+          "height": 0.48
+        },
+        "eyebrow": "Next.js 14 App Router",
+        "accentColor": "#f97316",
+        "title": "Build APIs\nthat scale",
+        "subtitle": "Route Handlers · Dynamic Routes · Middleware · Server Fetch",
+        "alignment": "center",
+        "color": "#f8fafc"
+      },
+      "id": "api-outro-title",
+      "trackId": "content",
+      "from": 1015,
+      "durationInFrames": 180
+    },
+    {
+      "component": "StatCounter",
+      "props": {
+        "motion": {
+          "type": "spring",
+          "direction": "up",
+          "durationInFrames": 30,
+          "springProfile": "bouncy"
+        },
+        "layout": {
+          "x": 0.15,
+          "y": 0.74,
+          "width": 0.7,
+          "height": 0.2
+        },
+        "accentColor": "#f97316",
+        "value": 4,
+        "label": "concepts, zero extra config",
+        "suffix": "",
+        "color": "#f97316",
+        "decimals": 0
+      },
+      "id": "api-outro-stat",
+      "trackId": "content",
+      "from": 1065,
+      "durationInFrames": 130
+    }
+  ],
+  "audio": {
+    "src": "music/muted-warning.mp3",
+    "volume": 0.3,
+    "startFrom": 0,
+    "muted": false,
+    "attribution": "\"Muted Warning\" by jaspertine — CC Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/) — https://ccmixter.org/files/jaspertine/70612"
+  }
+}
