@@ -69,7 +69,7 @@ export function makeTimeline(s: VideoSpec): any {
 
       // ═══ HOOK (0–90) ═══════════════════════════════════════════════════════
       { id:`${p}-hook-bg`,    component:"TitleCard",    trackId:"bg",      from:0,  durationInFrames:90,
-        props:{ title:"", backgroundColor:BG_HOOK, motion:{type:"none",direction:"none"} }},
+        props:{ title:" ", backgroundColor:BG_HOOK, motion:{type:"none",direction:"none"} }},
       { id:`${p}-hook-title`, component:"TitleCard",    trackId:"content", from:0,  durationInFrames:90,
         props:{ title:s.hook.title, subtitle:s.hook.sub, alignment:"center", fontSize:88, color:"#ffffff",
                 accentColor:acc, eyebrow:`KOLABORATE ACADEMY  ·  ${ep}/05`,
@@ -91,7 +91,7 @@ export function makeTimeline(s: VideoSpec): any {
 
       // ═══ SECTION 1 (105–285) — stat ════════════════════════════════════════
       { id:`${p}-s1-bg`,    component:"TitleCard",    trackId:"bg",      from:105, durationInFrames:180,
-        props:{ title:"", backgroundColor:BG_SEC, motion:{type:"none",direction:"none"} }},
+        props:{ title:" ", backgroundColor:BG_SEC, motion:{type:"none",direction:"none"} }},
       { id:`${p}-s1-bdg`,   component:"SubtitleCard", trackId:"overlay", from:110, durationInFrames:175,
         props:{ text:`01 — ${s.s1.topic}`, alignment:"left", fontSize:28, color:acc,
                 layout:{x:0.06,y:0.04,width:0.88,height:0.07}, motion: spring("down",15,"snappy") }},
@@ -110,7 +110,7 @@ export function makeTimeline(s: VideoSpec): any {
 
       // ═══ SECTION 2 (300–480) — chart ═══════════════════════════════════════
       { id:`${p}-s2-bg`,    component:"TitleCard",    trackId:"bg",      from:300, durationInFrames:180,
-        props:{ title:"", backgroundColor:BG_SEC, motion:{type:"none",direction:"none"} }},
+        props:{ title:" ", backgroundColor:BG_SEC, motion:{type:"none",direction:"none"} }},
       { id:`${p}-s2-bdg`,   component:"SubtitleCard", trackId:"overlay", from:305, durationInFrames:175,
         props:{ text:`02 — ${s.s2.topic}`, alignment:"left", fontSize:28, color:acc,
                 layout:{x:0.06,y:0.04,width:0.88,height:0.07}, motion: spring("down",15,"snappy") }},
@@ -127,7 +127,7 @@ export function makeTimeline(s: VideoSpec): any {
 
       // ═══ SECTION 3 (495–690) — ring ════════════════════════════════════════
       { id:`${p}-s3-bg`,    component:"TitleCard",    trackId:"bg",      from:495, durationInFrames:195,
-        props:{ title:"", backgroundColor:BG_SEC, motion:{type:"none",direction:"none"} }},
+        props:{ title:" ", backgroundColor:BG_SEC, motion:{type:"none",direction:"none"} }},
       { id:`${p}-s3-bdg`,   component:"SubtitleCard", trackId:"overlay", from:500, durationInFrames:190,
         props:{ text:`03 — ${s.s3.topic}`, alignment:"left", fontSize:28, color:acc,
                 layout:{x:0.06,y:0.04,width:0.88,height:0.07}, motion: spring("down",15,"snappy") }},
@@ -146,7 +146,7 @@ export function makeTimeline(s: VideoSpec): any {
 
       // ═══ OUTRO (705–900) ═══════════════════════════════════════════════════
       { id:`${p}-out-bg`,   component:"TitleCard",     trackId:"bg",      from:705, durationInFrames:195,
-        props:{ title:"", backgroundColor:BG_OUTRO, motion:{type:"none",direction:"none"} }},
+        props:{ title:" ", backgroundColor:BG_OUTRO, motion:{type:"none",direction:"none"} }},
       { id:`${p}-out-logo`, component:"LogoAnimation", trackId:"content", from:710, durationInFrames:180,
         props:{ src:LOGO, size:160, springProfile:"bouncy",
                 layout:{x:0.35,y:0.08,width:0.30,height:0.18} }},
