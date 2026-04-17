@@ -1,0 +1,371 @@
+{
+  "id": "ai-at-work-ep2",
+  "title": "AI at Work — Ep 2: One Prompt, Four Rewrites",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1500,
+  "backgroundColor": "#061209",
+  "tracks": [
+    { "id": "bg", "label": "Background", "zIndex": 0, "hidden": false },
+    { "id": "content", "label": "Content", "zIndex": 1, "hidden": false },
+    { "id": "overlay", "label": "Overlay", "zIndex": 2, "hidden": false }
+  ],
+  "clips": [
+    {
+      "id": "ep2-hook-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0d2410 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep2-hook-title",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "One Prompt.\nFour Rewrites.",
+        "subtitle": "Watch a vague ask become a useful one.",
+        "alignment": "center",
+        "fontSize": 78,
+        "color": "#ffffff",
+        "accentColor": "#35b544",
+        "eyebrow": "KOLABORATE ACADEMY  ·  02/03",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep2-hook-badge",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 5,
+      "durationInFrames": 85,
+      "props": {
+        "text": "EPISODE 02 OF 03 — AI AT WORK",
+        "alignment": "left",
+        "fontSize": 24,
+        "color": "#35b544",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.06 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep2-t1",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#2a8a34", "direction": "up" }
+    },
+    {
+      "id": "ep2-s1-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 105,
+      "durationInFrames": 285,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep2-s1-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 110,
+      "durationInFrames": 280,
+      "props": {
+        "text": "V1 — JUST THE TASK",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#ef4444",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep2-s1-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 110,
+      "durationInFrames": 280,
+      "props": {
+        "title": "\"Write an email\nabout the policy\nchange.\"",
+        "alignment": "left",
+        "fontSize": 66,
+        "color": "#ffffff",
+        "accentColor": "#ef4444",
+        "layout": { "x": 0.06, "y": 0.14, "width": 0.88, "height": 0.46 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep2-s1-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 170,
+      "durationInFrames": 220,
+      "props": {
+        "text": "Result: generic, corporate, forgettable.",
+        "position": "bottom",
+        "fontSize": 36,
+        "backgroundColor": "#424242",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "ep2-t2",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 390,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#061209" }
+    },
+    {
+      "id": "ep2-s2-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 405,
+      "durationInFrames": 285,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep2-s2-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 410,
+      "durationInFrames": 280,
+      "props": {
+        "text": "V2 — ADD A ROLE",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#fbdf64",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep2-s2-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 410,
+      "durationInFrames": 280,
+      "props": {
+        "title": "You are a people-first\nmanager writing to\nyour team.",
+        "alignment": "left",
+        "fontSize": 62,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": { "x": 0.06, "y": 0.14, "width": 0.88, "height": 0.46 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep2-s2-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 470,
+      "durationInFrames": 220,
+      "props": {
+        "text": "Better. It now has a voice.",
+        "position": "bottom",
+        "fontSize": 36,
+        "backgroundColor": "#fbdf64",
+        "textColor": "#061209"
+      }
+    },
+    {
+      "id": "ep2-t3",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 690,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#061209" }
+    },
+    {
+      "id": "ep2-s3-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 705,
+      "durationInFrames": 285,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep2-s3-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 710,
+      "durationInFrames": 280,
+      "props": {
+        "text": "V3 — ADD A FORMAT",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#e1f4e4",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep2-s3-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 710,
+      "durationInFrames": 280,
+      "props": {
+        "title": "Subject line.\n120 words.\nOne specific next step.",
+        "alignment": "left",
+        "fontSize": 58,
+        "color": "#ffffff",
+        "accentColor": "#e1f4e4",
+        "layout": { "x": 0.06, "y": 0.14, "width": 0.88, "height": 0.46 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep2-s3-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 770,
+      "durationInFrames": 220,
+      "props": {
+        "text": "Now it has shape.",
+        "position": "bottom",
+        "fontSize": 36,
+        "backgroundColor": "#2a8a34",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "ep2-t4",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 990,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#061209" }
+    },
+    {
+      "id": "ep2-s4-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 1005,
+      "durationInFrames": 285,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#0d2410 0%,#1a4a1e 55%,#0d2410 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep2-s4-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 1010,
+      "durationInFrames": 280,
+      "props": {
+        "text": "V4 — ADD CONSTRAINTS",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#35b544",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep2-s4-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1010,
+      "durationInFrames": 280,
+      "props": {
+        "title": "No jargon.\nWarm but firm.\nDon't use\n\"disappointed.\"",
+        "alignment": "left",
+        "fontSize": 62,
+        "color": "#ffffff",
+        "accentColor": "#35b544",
+        "layout": { "x": 0.06, "y": 0.14, "width": 0.88, "height": 0.5 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep2-s4-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 1080,
+      "durationInFrames": 210,
+      "props": {
+        "text": "Now it sounds like you.",
+        "position": "bottom",
+        "fontSize": 40,
+        "backgroundColor": "#35b544",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "ep2-t5",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 1290,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#2a8a34", "direction": "left" }
+    },
+    {
+      "id": "ep2-out-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 1305,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#0d2410 0%,#1a4a1e 50%,#0d2410 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep2-out-cta",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 1310,
+      "durationInFrames": 190,
+      "props": {
+        "title": "Task\nRole\nFormat\nConstraints",
+        "subtitle": "The four-part prompt. Memorise it.",
+        "alignment": "center",
+        "fontSize": 82,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": { "x": 0.06, "y": 0.12, "width": 0.88, "height": 0.7 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep2-out-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 1335,
+      "durationInFrames": 165,
+      "props": {
+        "name": "kolaborate.africa/academy",
+        "title": "AI at Work — enroll for all 5 lessons",
+        "accentColor": "#fbdf64",
+        "textColor": "#ffffff",
+        "position": "bottom-left"
+      }
+    }
+  ]
+}

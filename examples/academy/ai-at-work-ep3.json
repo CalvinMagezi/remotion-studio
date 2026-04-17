@@ -1,0 +1,340 @@
+{
+  "id": "ai-at-work-ep3",
+  "title": "AI at Work — Ep 3: When AI Is Wrong",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1050,
+  "backgroundColor": "#061209",
+  "tracks": [
+    { "id": "bg", "label": "Background", "zIndex": 0, "hidden": false },
+    { "id": "content", "label": "Content", "zIndex": 1, "hidden": false },
+    { "id": "overlay", "label": "Overlay", "zIndex": 2, "hidden": false }
+  ],
+  "clips": [
+    {
+      "id": "ep3-hook-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0d2410 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep3-hook-title",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "When AI\nis wrong.",
+        "subtitle": "And how to catch it before it bites you.",
+        "alignment": "center",
+        "fontSize": 88,
+        "color": "#ffffff",
+        "accentColor": "#ef4444",
+        "eyebrow": "KOLABORATE ACADEMY  ·  03/03",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep3-hook-badge",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 5,
+      "durationInFrames": 85,
+      "props": {
+        "text": "EPISODE 03 OF 03 — AI AT WORK",
+        "alignment": "left",
+        "fontSize": 24,
+        "color": "#35b544",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.06 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep3-t1",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#ef4444", "direction": "up" }
+    },
+    {
+      "id": "ep3-s1-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 105,
+      "durationInFrames": 270,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#1a0a0a 0%,#2a1010 55%,#1a0a0a 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep3-s1-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 110,
+      "durationInFrames": 265,
+      "props": {
+        "text": "01 — THE HALLUCINATION",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#ef4444",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep3-s1-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 110,
+      "durationInFrames": 265,
+      "props": {
+        "title": "\"73% of companies\nreport a 2x\nproductivity lift.\"",
+        "alignment": "left",
+        "fontSize": 68,
+        "color": "#ffffff",
+        "accentColor": "#ef4444",
+        "layout": { "x": 0.06, "y": 0.16, "width": 0.88, "height": 0.5 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep3-s1-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 160,
+      "durationInFrames": 215,
+      "props": {
+        "text": "Confident. Specific. Completely made up. AI will invent a statistic that sounds exactly like a real one — and never warn you.",
+        "alignment": "left",
+        "fontSize": 36,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": { "x": 0.06, "y": 0.68, "width": 0.88, "height": 0.26 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "delay": 8, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep3-t2",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 375,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#061209" }
+    },
+    {
+      "id": "ep3-s2-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 390,
+      "durationInFrames": 270,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep3-s2-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 395,
+      "durationInFrames": 265,
+      "props": {
+        "text": "02 — TRUST, BUT VERIFY",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#35b544",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep3-s2-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 395,
+      "durationInFrames": 265,
+      "props": {
+        "title": "Always check\nthree things.",
+        "alignment": "left",
+        "fontSize": 74,
+        "color": "#ffffff",
+        "accentColor": "#35b544",
+        "layout": { "x": 0.06, "y": 0.14, "width": 0.88, "height": 0.2 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep3-s2-chart",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 415,
+      "durationInFrames": 245,
+      "props": {
+        "data": [
+          { "label": "Names (people, companies)", "value": 100, "color": "#35b544" },
+          { "label": "Numbers (%, $, dates)", "value": 100, "color": "#35b544" },
+          { "label": "Quotes & citations", "value": 100, "color": "#35b544" }
+        ],
+        "title": "Verify before you paste",
+        "horizontal": true,
+        "showValues": false,
+        "layout": { "x": 0.06, "y": 0.36, "width": 0.88, "height": 0.5 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25 }
+      }
+    },
+    {
+      "id": "ep3-s2-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 440,
+      "durationInFrames": 220,
+      "props": {
+        "text": "30 seconds of Googling beats one embarrassing email.",
+        "position": "bottom",
+        "fontSize": 34,
+        "backgroundColor": "#35b544",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "ep3-t3",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 660,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#2a8a34", "direction": "left" }
+    },
+    {
+      "id": "ep3-s3-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 675,
+      "durationInFrames": 195,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep3-s3-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 680,
+      "durationInFrames": 190,
+      "props": {
+        "text": "03 — AND ONE RULE ON PRIVACY",
+        "alignment": "left",
+        "fontSize": 26,
+        "color": "#fbdf64",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep3-s3-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 680,
+      "durationInFrames": 190,
+      "props": {
+        "title": "Don't paste\nclient data\ninto public AI.",
+        "alignment": "left",
+        "fontSize": 72,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": { "x": 0.06, "y": 0.16, "width": 0.88, "height": 0.55 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep3-s3-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 730,
+      "durationInFrames": 140,
+      "props": {
+        "text": "Names + PII + salaries + secrets → redact or use your enterprise tool.",
+        "position": "bottom",
+        "fontSize": 30,
+        "backgroundColor": "#fbdf64",
+        "textColor": "#061209"
+      }
+    },
+    {
+      "id": "ep3-t4",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 870,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#061209" }
+    },
+    {
+      "id": "ep3-out-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 885,
+      "durationInFrames": 165,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#0d2410 0%,#1a4a1e 50%,#0d2410 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep3-out-logo",
+      "component": "LogoAnimation",
+      "trackId": "content",
+      "from": 890,
+      "durationInFrames": 160,
+      "props": {
+        "src": "https://www.kolaborate.africa/_next/image?url=%2Flogo.png&w=384&q=75&dpl=dpl_CiMGbgMpJQsqyT4XvX3L8XWZYgKJ",
+        "size": 160,
+        "springProfile": "bouncy",
+        "layout": { "x": 0.35, "y": 0.08, "width": 0.3, "height": 0.18 }
+      }
+    },
+    {
+      "id": "ep3-out-cta",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 900,
+      "durationInFrames": 150,
+      "props": {
+        "title": "The full course\nhas 12 ready-to-use\nprompt templates.",
+        "subtitle": "AI at Work — on Kolaborate Academy",
+        "alignment": "center",
+        "fontSize": 66,
+        "color": "#ffffff",
+        "accentColor": "#35b544",
+        "layout": { "x": 0.06, "y": 0.32, "width": 0.88, "height": 0.5 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep3-out-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 910,
+      "durationInFrames": 140,
+      "props": {
+        "name": "kolaborate.africa/academy",
+        "title": "Enroll today — 60 minutes to confident AI use",
+        "accentColor": "#35b544",
+        "textColor": "#ffffff",
+        "position": "bottom-left"
+      }
+    }
+  ]
+}
