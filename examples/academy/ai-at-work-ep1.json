@@ -1,0 +1,345 @@
+{
+  "id": "ai-at-work-ep1",
+  "title": "AI at Work — Ep 1: AI Is Not Magic",
+  "fps": 30,
+  "width": 1080,
+  "height": 1920,
+  "durationInFrames": 1200,
+  "backgroundColor": "#061209",
+  "tracks": [
+    { "id": "bg", "label": "Background", "zIndex": 0, "hidden": false },
+    { "id": "content", "label": "Content", "zIndex": 1, "hidden": false },
+    { "id": "overlay", "label": "Overlay", "zIndex": 2, "hidden": false }
+  ],
+  "clips": [
+    {
+      "id": "ep1-hook-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0d2410 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep1-hook-title",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 0,
+      "durationInFrames": 90,
+      "props": {
+        "title": "AI\nat Work",
+        "subtitle": "A practical guide for everyday professionals",
+        "alignment": "center",
+        "fontSize": 92,
+        "color": "#ffffff",
+        "accentColor": "#35b544",
+        "eyebrow": "KOLABORATE ACADEMY  ·  01/03",
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep1-hook-badge",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 5,
+      "durationInFrames": 85,
+      "props": {
+        "text": "EPISODE 01 OF 03 — AI AT WORK",
+        "alignment": "left",
+        "fontSize": 24,
+        "color": "#35b544",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.06 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep1-t1",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 90,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#2a8a34", "direction": "up" }
+    },
+    {
+      "id": "ep1-s1-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 105,
+      "durationInFrames": 300,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep1-s1-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 110,
+      "durationInFrames": 295,
+      "props": {
+        "text": "01 — IT'S NOT MAGIC",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#35b544",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep1-s1-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 110,
+      "durationInFrames": 295,
+      "props": {
+        "title": "It's not\nmagic.",
+        "alignment": "left",
+        "fontSize": 96,
+        "color": "#ffffff",
+        "accentColor": "#35b544",
+        "layout": { "x": 0.06, "y": 0.12, "width": 0.88, "height": 0.28 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep1-s1-sub",
+      "component": "SubtitleCard",
+      "trackId": "content",
+      "from": 130,
+      "durationInFrames": 275,
+      "props": {
+        "text": "Modern AI is a very well-read intern on their first day. They've read almost everything. They've never met your boss. They'll guess — and sound confident even when they're wrong.",
+        "alignment": "left",
+        "fontSize": 40,
+        "color": "#e1f4e4",
+        "maxWidth": 940,
+        "layout": { "x": 0.06, "y": 0.45, "width": 0.88, "height": 0.32 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "delay": 8, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep1-s1-cap",
+      "component": "Caption",
+      "trackId": "overlay",
+      "from": 200,
+      "durationInFrames": 205,
+      "props": {
+        "text": "It's autocomplete — taken seriously.",
+        "position": "bottom",
+        "fontSize": 36,
+        "backgroundColor": "#35b544",
+        "textColor": "#ffffff"
+      }
+    },
+    {
+      "id": "ep1-t2",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 405,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#061209" }
+    },
+    {
+      "id": "ep1-s2-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 420,
+      "durationInFrames": 300,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep1-s2-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 425,
+      "durationInFrames": 295,
+      "props": {
+        "text": "02 — WHAT IT'S ACTUALLY GOOD AT",
+        "alignment": "left",
+        "fontSize": 26,
+        "color": "#35b544",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep1-s2-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 425,
+      "durationInFrames": 295,
+      "props": {
+        "title": "Great at some things.\nTerrible at others.",
+        "alignment": "left",
+        "fontSize": 60,
+        "color": "#ffffff",
+        "accentColor": "#35b544",
+        "layout": { "x": 0.06, "y": 0.12, "width": 0.88, "height": 0.2 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep1-s2-chart",
+      "component": "BarChart",
+      "trackId": "content",
+      "from": 445,
+      "durationInFrames": 275,
+      "props": {
+        "data": [
+          { "label": "Drafting emails", "value": 95, "color": "#35b544" },
+          { "label": "Summarizing", "value": 92, "color": "#35b544" },
+          { "label": "Brainstorming", "value": 88, "color": "#35b544" },
+          { "label": "Remembering your org", "value": 12, "color": "#ef4444" },
+          { "label": "Today's news", "value": 10, "color": "#ef4444" },
+          { "label": "Math under pressure", "value": 30, "color": "#ef4444" }
+        ],
+        "title": "Where AI earns its keep",
+        "horizontal": true,
+        "showValues": true,
+        "layout": { "x": 0.06, "y": 0.34, "width": 0.88, "height": 0.55 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25 }
+      }
+    },
+    {
+      "id": "ep1-t3",
+      "component": "SlideTransition",
+      "trackId": "overlay",
+      "from": 720,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#2a8a34", "direction": "left" }
+    },
+    {
+      "id": "ep1-s3-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 735,
+      "durationInFrames": 180,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#061209 0%,#0e2a12 60%,#061209 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep1-s3-bdg",
+      "component": "SubtitleCard",
+      "trackId": "overlay",
+      "from": 740,
+      "durationInFrames": 175,
+      "props": {
+        "text": "03 — A USEFUL RULE",
+        "alignment": "left",
+        "fontSize": 28,
+        "color": "#35b544",
+        "layout": { "x": 0.06, "y": 0.04, "width": 0.88, "height": 0.07 },
+        "motion": { "type": "spring", "direction": "down", "durationInFrames": 15, "springProfile": "snappy" }
+      }
+    },
+    {
+      "id": "ep1-s3-ttl",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 740,
+      "durationInFrames": 175,
+      "props": {
+        "title": "If it fits one\nof those five jobs,\nAI will save you\ntime.",
+        "alignment": "left",
+        "fontSize": 68,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": { "x": 0.06, "y": 0.18, "width": 0.88, "height": 0.55 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep1-s3-stat",
+      "component": "StatCounter",
+      "trackId": "content",
+      "from": 770,
+      "durationInFrames": 145,
+      "props": {
+        "value": 5,
+        "label": "drafting, rewording, summarizing, brainstorming, structuring",
+        "suffix": " jobs",
+        "color": "#35b544",
+        "fontSize": 130,
+        "layout": { "x": 0.06, "y": 0.72, "width": 0.88, "height": 0.22 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 20, "delay": 15 }
+      }
+    },
+    {
+      "id": "ep1-t4",
+      "component": "FadeTransition",
+      "trackId": "overlay",
+      "from": 915,
+      "durationInFrames": 15,
+      "props": { "durationInFrames": 15, "color": "#061209" }
+    },
+    {
+      "id": "ep1-out-bg",
+      "component": "TitleCard",
+      "trackId": "bg",
+      "from": 930,
+      "durationInFrames": 270,
+      "props": {
+        "title": " ",
+        "backgroundColor": "linear-gradient(160deg,#0d2410 0%,#1a4a1e 50%,#0d2410 100%)",
+        "motion": { "type": "none", "direction": "none" }
+      }
+    },
+    {
+      "id": "ep1-out-logo",
+      "component": "LogoAnimation",
+      "trackId": "content",
+      "from": 935,
+      "durationInFrames": 260,
+      "props": {
+        "src": "https://www.kolaborate.africa/_next/image?url=%2Flogo.png&w=384&q=75&dpl=dpl_CiMGbgMpJQsqyT4XvX3L8XWZYgKJ",
+        "size": 160,
+        "springProfile": "bouncy",
+        "layout": { "x": 0.35, "y": 0.08, "width": 0.3, "height": 0.18 }
+      }
+    },
+    {
+      "id": "ep1-out-cta",
+      "component": "TitleCard",
+      "trackId": "content",
+      "from": 945,
+      "durationInFrames": 250,
+      "props": {
+        "title": "Next:\nHow to prompt →",
+        "subtitle": "Enroll in AI at Work on Kolaborate Academy",
+        "alignment": "center",
+        "fontSize": 72,
+        "color": "#ffffff",
+        "accentColor": "#fbdf64",
+        "layout": { "x": 0.06, "y": 0.32, "width": 0.88, "height": 0.4 },
+        "motion": { "type": "spring", "direction": "up", "durationInFrames": 25, "springProfile": "gentle" }
+      }
+    },
+    {
+      "id": "ep1-out-lt",
+      "component": "LowerThird",
+      "trackId": "overlay",
+      "from": 955,
+      "durationInFrames": 240,
+      "props": {
+        "name": "kolaborate.africa/academy",
+        "title": "AI at Work — for everyday professionals",
+        "accentColor": "#fbdf64",
+        "textColor": "#ffffff",
+        "position": "bottom-left"
+      }
+    }
+  ]
+}
